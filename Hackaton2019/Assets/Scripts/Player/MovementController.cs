@@ -64,7 +64,6 @@ public class MovementController : MonoBehaviour {
             LookAt(point);
         }
 
-        Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * 10, Color.black);
     }
 
     private void OnTriggerEnter(Collider other)

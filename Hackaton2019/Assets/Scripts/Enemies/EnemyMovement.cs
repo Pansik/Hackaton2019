@@ -25,8 +25,6 @@ public class EnemyMovement : MonoBehaviour {
     private bool canShoot = true;
     [SerializeField]
     private float brakeForce = 5f;
-    [SerializeField]
-    private float attackDamage = 5f;
     #endregion
 
 
@@ -37,6 +35,8 @@ public class EnemyMovement : MonoBehaviour {
     private float timeSinceLastHit = 0f;
     private Vector3 direction;
     private float distance = 0.0f;
+
+    private EnemyController enemyController;
 
     public enum CurrentState { Idle, Following, Attacking };
     public CurrentState currentState;
@@ -53,6 +53,11 @@ public class EnemyMovement : MonoBehaviour {
         isShooting = false;
         rb = GetComponent<Rigidbody>();
         pathFinder = GetComponent<NavMeshAgent>();
+        pathFinder.speed = moveSpeed;
+        pathFinder.angularSpeed *= (int)moveSpeed & 10;
+        enemyController = GetComponent<EnemyController>();
+        target = FindObjectOfType<PlayerController>().gameObject.transform;
+        player = target.gameObject;
     }
 
     void Update()
@@ -89,17 +94,29 @@ public class EnemyMovement : MonoBehaviour {
             {
                 return;
             }
+            Debug.Log(transform.position);
+            Debug.LogWarning(target.transform.position);
+            RaycastHit hit;
+            if(Physics.Linecast(transform.position, target.transform.position, out hit) == true)
+            {
+                if (hit.transform.CompareTag("Player"))
+                {
+                    EnemyMovesToPlayer();
+                    Debug.Log("obstacle");
+                    return;
+                }
+            }
             else
             {
                 timeSinceLastHit = 0f;
             }
             if (canShoot)
             {
-                ShootPlayer();
+                enemyController.ShootPlayer();
             }
             else
             {
-                HitPlayer();
+                enemyController.HitPlayer();
             }
         }
 
@@ -125,18 +142,6 @@ public class EnemyMovement : MonoBehaviour {
         pathFinder.SetDestination(target.position);
     }
 
-    private void ShootPlayer()
-    {
-        PlayerController.Instance.GetHit(attackDamage);
-        isShooting = true;
-        //Shoot player ...
-    }
-
-    private void HitPlayer()
-    {
-        PlayerController.Instance.GetHit(attackDamage);
-        //Hit player
-    }
 
     private void OnDrawGizmosSelected()
     {
@@ -150,13 +155,6 @@ public class EnemyMovement : MonoBehaviour {
         }
     }
 
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            PlayerController.Instance.GetHit(attackDamage * 2);
-            Destroy(gameObject);
-        }
-    }
+
 
 }
