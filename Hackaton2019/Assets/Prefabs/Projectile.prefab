@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 23114484974456300}
   - component: {fileID: 114658134501528406}
   - component: {fileID: 96794441622849860}
+  - component: {fileID: 114097677873670500}
   m_Layer: 0
   m_Name: Projectile
   m_TagString: Untagged
@@ -178,6 +179,18 @@ TrailRenderer:
     generateLightingData: 0
   m_MinVertexDistance: 0.01
   m_Autodestruct: 0
+--- !u!114 &114097677873670500
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1426873214736070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f9552ba7f34e934586e8b9b7aa69f0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroyDelay: 5
 --- !u!114 &114658134501528406
 MonoBehaviour:
   m_ObjectHideFlags: 1
