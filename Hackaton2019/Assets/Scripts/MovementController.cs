@@ -38,10 +38,20 @@ public class MovementController : MonoBehaviour {
 
     void Update()
     {
+        //var x = Input.GetAxis("Horizontal") * Time.deltaTime * 3.0f;
+        //var z = Input.GetAxis("Vertical") * Time.deltaTime * 3.0f;
+
+        //Vector3 moveInput = new Vector3(x, 0, z);
+        //Vector3 moveVelocity = moveInput.normalized * moveSpeed;
+        //if (Input.GetKey(KeyCode.LeftArrow) == false && Input.GetKey(KeyCode.RightArrow) == false)
+        //    moveVelocity = Vector3.zero;
+        //Debug.Log(x + "     horizontal    " + z);
+        //Move(moveVelocity);
+        //transform.Translate(x, 0, z);
+
         Vector3 moveInput = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
         Vector3 moveVelocity = moveInput.normalized * moveSpeed;
         Move(moveVelocity);
-
         Ray ray = viewCamera.ScreenPointToRay(Input.mousePosition);
         Plane groundPlane = new Plane(Vector3.up, Vector3.zero);
         float rayDistance;
