@@ -127,7 +127,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   target: {fileID: 0}
-  moveSpeed: 25
+  moveSpeed: 35
   minDistance: 15
   maxDistance: 50
   rotationDrag: 0.75

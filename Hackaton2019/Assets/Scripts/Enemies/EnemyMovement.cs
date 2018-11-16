@@ -54,7 +54,6 @@ public class EnemyMovement : MonoBehaviour {
         rb = GetComponent<Rigidbody>();
         pathFinder = GetComponent<NavMeshAgent>();
         pathFinder.speed = moveSpeed;
-        pathFinder.angularSpeed *= (int)moveSpeed & 10;
         enemyController = GetComponent<EnemyController>();
         target = FindObjectOfType<PlayerController>().gameObject.transform;
         player = target.gameObject;
@@ -62,6 +61,7 @@ public class EnemyMovement : MonoBehaviour {
 
     void Update()
     {
+        Debug.Log(pathFinder.speed);
         timeSinceLastHit += Time.deltaTime;
         //Find the distance to the player
         distance = Vector3.Distance(player.transform.position, this.transform.position);
@@ -90,21 +90,23 @@ public class EnemyMovement : MonoBehaviour {
             EnemyStopsMoving();
 
             currentState = CurrentState.Attacking;
-            if(timeSinceLastHit < shootingDelay)
-            {
-                return;
-            }
-            Debug.Log(transform.position);
-            Debug.LogWarning(target.transform.position);
+
+            //Debug.Log(transform.position);
+            //Debug.LogWarning(target.transform.position);
             RaycastHit hit;
             if(Physics.Linecast(transform.position, target.transform.position, out hit) == true)
             {
-                if (hit.transform.CompareTag("Player"))
+                Debug.Log(hit.transform.tag);
+                if (!hit.transform.CompareTag("Player"))
                 {
                     EnemyMovesToPlayer();
                     Debug.Log("obstacle");
                     return;
                 }
+            }
+            if (timeSinceLastHit < shootingDelay)
+            {
+                return;
             }
             else
             {
@@ -131,7 +133,7 @@ public class EnemyMovement : MonoBehaviour {
     private void EnemyStopsMoving()
     {
         isShooting = false;
-        //rb.drag = (brakeForce);
+        rb.drag = (brakeForce);
         pathFinder.isStopped = true;
     }
 

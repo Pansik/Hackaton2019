@@ -115,8 +115,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   target: {fileID: 0}
-  moveSpeed: 30
-  minDistance: 3
+  moveSpeed: 45
+  minDistance: 10
   maxDistance: 50
   rotationDrag: 0.75
   canShoot: 0
