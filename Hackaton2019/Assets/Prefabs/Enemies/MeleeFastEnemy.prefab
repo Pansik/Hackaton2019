@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 23725541482690810}
   - component: {fileID: 54059693270367856}
   - component: {fileID: 114017735885451338}
+  - component: {fileID: 114518789251250406}
   - component: {fileID: 195849855689502110}
   m_Layer: 0
   m_Name: MeleeFastEnemy
@@ -122,6 +123,18 @@ MonoBehaviour:
   brakeForce: 5
   currentState: 0
   debugGizmo: 1
+--- !u!114 &114518789251250406
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1007697404354428}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32fdf2b311b9a2c49ab46916471ecc0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackDamage: 5
 --- !u!135 &135663148920691730
 SphereCollider:
   m_ObjectHideFlags: 1

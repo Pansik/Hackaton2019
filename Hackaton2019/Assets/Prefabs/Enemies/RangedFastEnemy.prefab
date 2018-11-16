@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 23391891510314750}
   - component: {fileID: 54269247685721352}
   - component: {fileID: 114517175287821360}
+  - component: {fileID: 114404247221490514}
   - component: {fileID: 195446977995251030}
   m_Layer: 0
   m_Name: RangedFastEnemy
@@ -101,6 +102,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &114404247221490514
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1485455081163062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32fdf2b311b9a2c49ab46916471ecc0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackDamage: 5
 --- !u!114 &114517175287821360
 MonoBehaviour:
   m_ObjectHideFlags: 1
