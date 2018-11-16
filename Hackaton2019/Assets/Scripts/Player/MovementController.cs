@@ -5,6 +5,11 @@ using UnityEngine;
 public class MovementController : MonoBehaviour {
 
     public event System.Action<Weapon> EventOnPickupWeapon;
+
+    [SerializeField]
+    private float dashTime = 0.3f;
+    [SerializeField]
+    private float dashSpeed = 5;
     private Vector3 velocity;
     private Rigidbody myRigidbody;
 
@@ -56,6 +61,14 @@ public class MovementController : MonoBehaviour {
         Plane groundPlane = new Plane(Vector3.up, Vector3.zero);
         float rayDistance;
 
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Debug.Log("space");
+            //myRigidbody.velocity = velocity * dashSpeed;
+            //myRigidbody.MovePosition(myRigidbody.position + velocity * Time.fixedDeltaTime * 10);
+            StartCoroutine(Dash(velocity));
+        }
+
         if (groundPlane.Raycast(ray, out rayDistance))
         {
             Vector3 point = ray.GetPoint(rayDistance);
@@ -64,6 +77,19 @@ public class MovementController : MonoBehaviour {
             LookAt(point);
         }
 
+    }
+
+    private IEnumerator Dash(Vector3 velocity)
+    {
+        myRigidbody.velocity = velocity * dashSpeed;
+        //for (float i = 0f; i < 0.3f; i += Time.deltaTime)
+        //{
+
+        //    myRigidbody.MovePosition(myRigidbody.position + velocity * Time.fixedDeltaTime * 2.2f);
+        //    yield return null;
+        //}
+        yield return new WaitForSeconds(dashTime);
+        myRigidbody.velocity = Vector3.zero;
     }
 
     private void OnTriggerEnter(Collider other)
