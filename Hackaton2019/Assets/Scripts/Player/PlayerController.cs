@@ -21,6 +21,12 @@ public class PlayerController : MonoBehaviour {
         }
     }
 
+    private void Update()
+    {
+
+        Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * 10, Color.black);
+    }
+
     public void GetHit(float damage)
     {
         hp -= damage;
