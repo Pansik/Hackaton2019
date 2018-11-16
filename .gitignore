@@ -1,9 +1,9 @@
-[Ll]ibrary/
-[Tt]emp/
-[Oo]bj/
-[Bb]uild/
-[Bb]uilds/
-Assets/AssetStoreTools*
+hackaton2019/[Ll]ibrary/
+hackaton2019/[Tt]emp/
+hackaton2019/[Oo]bj/
+hackaton2019/[Bb]uild/
+hackaton2019/[Bb]uilds/
+hackaton2019/Assets/AssetStoreTools*
 
 # Visual Studio cache directory
 .vs/
