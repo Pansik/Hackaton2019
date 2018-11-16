@@ -9,9 +9,9 @@ public class CameraShake : MonoBehaviour
         Weapon.EventOnShoot += StartShake;
     }
 
-    private void StartShake(float duration, float magnitude)
+    private void StartShake(Weapon weapon)
     {
-        StartCoroutine(Shake(duration, magnitude));
+        StartCoroutine(Shake(0.1f, weapon.cameraShakeStrength));
     }
 
     private IEnumerator Shake(float duration, float magnitude)

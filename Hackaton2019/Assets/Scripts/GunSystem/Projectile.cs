@@ -16,6 +16,12 @@ public class Projectile : MonoBehaviour
         if(other.CompareTag("Enemy"))
         {
             //hurt that motherfucker
+            Destroy(gameObject);
+        }
+
+        if(other.CompareTag("Untagged"))
+        {
+            Destroy(gameObject);
         }
     }
 
