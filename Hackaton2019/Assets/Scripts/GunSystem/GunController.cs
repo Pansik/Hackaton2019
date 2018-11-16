@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class GunController : MonoBehaviour
 {
-    private MovementController movementController;
     public Weapon currentWeapon;
+    public Transform gunTransform;
     private float shootDelay;
     private float shootDelayTimer;
     private bool canShoot = false;
+    private MovementController movementController;
 
     private void Start()
     {
@@ -33,8 +34,10 @@ public class GunController : MonoBehaviour
 
     private void OnWeaponPickup(Weapon newWeapon)
     {
+        newWeapon.gameObject.transform.position = gunTransform.position;
+        newWeapon.gameObject.transform.parent = gunTransform.parent;
+        newWeapon.gameObject.transform.rotation = gunTransform.rotation;
         currentWeapon = newWeapon;
-        Debug.Log(newWeapon.gameObject.name);
         SetupShootDelay();
     }
 

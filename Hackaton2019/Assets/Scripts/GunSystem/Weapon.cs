@@ -4,12 +4,20 @@ using UnityEngine;
 
 public class Weapon : MonoBehaviour
 {
+    public static event System.Action<float, float> EventOnShoot;
     public GameObject projectilePrefab;
-    public Transform projectileStartTransform;
+    public List<Transform> projectileStartTransforms;
     public float shootDelay;
-
-    public void ShootProjectile()
+    public float cameraShakeStrength;
+    public virtual void ShootProjectile()
     {
-        GameObject newProjectile = Instantiate(projectilePrefab, projectileStartTransform.position, projectileStartTransform.rotation);
+        foreach (Transform shootPosition in projectileStartTransforms)
+        {
+            GameObject newProjectile = Instantiate(projectilePrefab, shootPosition.position, shootPosition.rotation);
+        }
+        if(EventOnShoot != null)
+        {
+            EventOnShoot(0.1f, cameraShakeStrength);
+        }
     }
 }
