@@ -69,14 +69,14 @@ public class EnemyMovement : MonoBehaviour {
         if (distance > minDistance && distance < maxDistance)
         {
             currentState = CurrentState.Following;
-            DroneMovesToPlayer();
+            EnemyMovesToPlayer();
         }
 
         //If the player is close enough shoot
         else if (distance < minDistance)
         {
 
-            DroneStopsMoving();
+            EnemyStopsMoving();
 
             if (canShoot)
             {
@@ -89,18 +89,20 @@ public class EnemyMovement : MonoBehaviour {
         else
         {
             currentState = CurrentState.Idle;
-            DroneStopsMoving();
+            EnemyStopsMoving();
         }
     }
 
-    private void DroneStopsMoving()
+    private void EnemyStopsMoving()
     {
         isShooting = false;
-        rb.drag = (brakeForce);
+        //rb.drag = (brakeForce);
+        pathFinder.isStopped = true;
     }
 
-    private void DroneMovesToPlayer()
+    private void EnemyMovesToPlayer()
     {
+        pathFinder.isStopped = false;
         isShooting = false;
         pathFinder.SetDestination(target.position);
     }
