@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class GunController : MonoBehaviour
 {
+    private MovementController movementController;
     public Weapon currentWeapon;
     private float shootDelay;
     private float shootDelayTimer;
@@ -11,6 +12,8 @@ public class GunController : MonoBehaviour
 
     private void Start()
     {
+        movementController = GetComponent<MovementController>();
+        movementController.EventOnPickupWeapon += OnWeaponPickup;
         SetupShootDelay();
     }
 
@@ -28,8 +31,10 @@ public class GunController : MonoBehaviour
         }
     }
 
-    private void OnWeaponPickup()
+    private void OnWeaponPickup(Weapon newWeapon)
     {
+        currentWeapon = newWeapon;
+        Debug.Log(newWeapon.gameObject.name);
         SetupShootDelay();
     }
 
