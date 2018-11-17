@@ -678,7 +678,7 @@ MonoBehaviour:
   explosionEffect: {fileID: 1000011797152326, guid: acf39d9f4addf294d93fa56fa373961b,
     type: 2}
   explosionForce: 1000
-  timeToDetonate: 1
+  timeToDetonate: 0.5
   radius: 10
   explosionSound: {fileID: 8300000, guid: d5f86c9a6b8f86e47bba79ab8ae3e77a, type: 3}
 --- !u!135 &135412879312698960
