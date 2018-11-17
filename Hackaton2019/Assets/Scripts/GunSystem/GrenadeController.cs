@@ -4,12 +4,14 @@ using UnityEngine;
 
 public class GrenadeController : MonoBehaviour
 {
-    public float grenadeAmount;
+    public int grenadeAmount;
+    public Transform grenadeStartTransform;
     public GameObject grenadePrefab;
+    public float throwForce = 45f;
 
     private void Update()
     {
-        if(Input.GetMouseButtonDown(1))
+        if(Input.GetMouseButtonDown(1) && grenadeAmount > 0)
         {
             ThrowGrenade();
         }
@@ -17,6 +19,19 @@ public class GrenadeController : MonoBehaviour
 
     private void ThrowGrenade()
     {
-        GameObject newGrenade = Instantiate(grenadePrefab, transform.position, Quaternion.identity);
+        GameObject newGrenade = Instantiate(grenadePrefab, grenadeStartTransform.position, Quaternion.identity);
+        Rigidbody rb = newGrenade.GetComponent<Rigidbody>();
+        rb.AddForce(transform.forward * throwForce);
+        grenadeAmount--;
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.CompareTag("GrenadeItem"))
+        {
+            grenadeAmount++;
+            Destroy(other.gameObject);
+        }
+    }
+
 }

@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Weapon
   - Enemy
+  - Fire
+  - GrenadeItem
   layers:
   - Default
   - TransparentFX
