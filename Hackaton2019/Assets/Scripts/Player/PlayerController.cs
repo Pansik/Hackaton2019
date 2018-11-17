@@ -11,6 +11,12 @@ public class PlayerController : MonoBehaviour
     private float maxHp = 100f;
     private float currentHp = 100f;
 
+    [SerializeField]
+    private Animator anim;
+
+
+    bool died = false;
+
     private void Awake()
     {
         if (Instance == null)
@@ -48,7 +54,11 @@ public class PlayerController : MonoBehaviour
 
     private void Death()
     {
+        if (died)
+            return;
+        anim.SetTrigger("Died");
         Debug.Log("RIP");
+        died = true;
     }
 
     private void DamageTaken(float damage)
