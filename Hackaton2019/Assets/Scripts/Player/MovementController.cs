@@ -61,9 +61,7 @@ public class MovementController : MonoBehaviour {
         Vector3 direction = new Vector3(Input.GetAxisRaw("HorizontalKey"), 0, Input.GetAxisRaw("VerticalKey"));
         Vector3 rightMovement = right * moveSpeed * Time.deltaTime * Input.GetAxis("HorizontalKey");
         Vector3 upMovement = forward * moveSpeed * Time.deltaTime * Input.GetAxis("VerticalKey");
-
-        Debug.Log(rightMovement);
-        Debug.Log(upMovement);
+        
         Vector3 heading = Vector3.Normalize(rightMovement + upMovement);
         transform.forward = heading;
         transform.position += rightMovement;
