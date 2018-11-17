@@ -220,7 +220,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 1426873214736070, guid: 68a29d1ae607f7649869083662f3fff4,
     type: 2}
-  husk: {fileID: 1220953182163208, guid: f769383637da0184a80e9b67ff79cda0, type: 2}
+  husk: {fileID: 1123161558413908, guid: c37b1cb54a9a6f848b9ae4d17cc51d09, type: 2}
   projectileStartTransforms:
   - {fileID: 4989190522494154}
   shootDelay: 0.15
