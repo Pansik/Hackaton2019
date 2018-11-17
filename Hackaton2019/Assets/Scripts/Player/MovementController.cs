@@ -114,7 +114,6 @@ public class MovementController : MonoBehaviour {
         if (groundPlane.Raycast(ray, out rayDistance))
         {
             Vector3 point = ray.GetPoint(rayDistance);
-            Debug.DrawLine(ray.origin, point, Color.red);
             crosshair.transform.position = new Vector3(point.x, point.y+0.1f, point.z);
             LookAt(point);
         }

@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LevelController : MonoBehaviour {
+public class LevelController : MonoBehaviour
+{
 
     public static LevelController Instance;
 
@@ -14,6 +15,9 @@ public class LevelController : MonoBehaviour {
 
     public EnemySpawner enemySpawner;
 
+    public AudioSource audioSource;
+    public AudioClip level1, level2, level3;
+    private AudioClip currentClip;
     private void Awake()
     {
         if(Instance == null)
@@ -23,9 +27,9 @@ public class LevelController : MonoBehaviour {
     }
     // Use this for initialization
     void Start () {
-		
-	}
-	
+        currentClip = level1;
+        audioSource.clip = currentClip;
+    }
 	// Update is called once per frame
 	void Update ()
     {
@@ -44,6 +48,12 @@ public class LevelController : MonoBehaviour {
     {
         Destroy(doors[currentLevel]);
         currentLevel++;
+        if (currentLevel == 1)
+            currentClip = level2;
+        if (currentLevel == 2)
+            currentClip = level3;
+        audioSource.clip = currentClip;
+        audioSource.Play();
         EnemySpawner.Instance.DeleteEnemies();
         if (currentLevel < levels.Length && PlayerController.Instance.Died == false)
         {
@@ -55,7 +65,6 @@ public class LevelController : MonoBehaviour {
             Debug.LogWarning("Game completed! buy dlc for more levels");
         }
     }
-
     private void NextLevel()
     {
         Debug.LogError("load next level");
