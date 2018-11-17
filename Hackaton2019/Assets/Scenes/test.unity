@@ -269,6 +269,7 @@ GameObject:
   - component: {fileID: 10158829}
   - component: {fileID: 10158831}
   - component: {fileID: 10158830}
+  - component: {fileID: 10158832}
   m_Layer: 0
   m_Name: Sofa2 (1)
   m_TagString: Obstacle
@@ -332,6 +333,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 10158828}
   m_Mesh: {fileID: 4300048, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &10158832
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 10158828}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.5703125, y: 2.3051126, z: 2.1759496}
+  m_Center: {x: -1.2387352, y: 1.1525565, z: -1.0873349}
 --- !u!1 &17203038
 GameObject:
   m_ObjectHideFlags: 0
@@ -780,6 +793,7 @@ GameObject:
   - component: {fileID: 37798692}
   - component: {fileID: 37798694}
   - component: {fileID: 37798693}
+  - component: {fileID: 37798695}
   m_Layer: 0
   m_Name: Desk2 (10)
   m_TagString: Obstacle
@@ -843,6 +857,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 37798691}
   m_Mesh: {fileID: 4300034, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &37798695
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 37798691}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10, y: 2.2819233, z: 3.7666273}
+  m_Center: {x: 1.589613, y: -1.1314917, z: -0.7439103}
 --- !u!1 &46723801
 GameObject:
   m_ObjectHideFlags: 0
@@ -926,6 +952,7 @@ GameObject:
   - component: {fileID: 47048228}
   - component: {fileID: 47048230}
   - component: {fileID: 47048229}
+  - component: {fileID: 47048231}
   m_Layer: 0
   m_Name: Desk3 (1)
   m_TagString: Obstacle
@@ -989,6 +1016,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 47048227}
   m_Mesh: {fileID: 4300042, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &47048231
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 47048227}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.000002, y: 2.2819233, z: 3.7666278}
+  m_Center: {x: 1.5896133, y: -1.1314917, z: -0.7439094}
 --- !u!1 &69181197
 GameObject:
   m_ObjectHideFlags: 0
@@ -1034,7 +1073,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 176ba9d2085a79b448cefcb3e07ea37e, type: 2}
+  - {fileID: 2100000, guid: 3a0ed3e21ab2e924c8fc4a03f9704948, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1279,6 +1318,7 @@ GameObject:
   - component: {fileID: 90027969}
   - component: {fileID: 90027971}
   - component: {fileID: 90027970}
+  - component: {fileID: 90027972}
   m_Layer: 0
   m_Name: Desk2 (2)
   m_TagString: Obstacle
@@ -1342,6 +1382,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 90027968}
   m_Mesh: {fileID: 4300034, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &90027972
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 90027968}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10, y: 2.2819233, z: 3.7666273}
+  m_Center: {x: 1.589613, y: -1.1314917, z: -0.7439103}
 --- !u!1 &91156433
 GameObject:
   m_ObjectHideFlags: 0
@@ -1559,6 +1611,7 @@ GameObject:
   - component: {fileID: 102094513}
   - component: {fileID: 102094515}
   - component: {fileID: 102094514}
+  - component: {fileID: 102094516}
   m_Layer: 0
   m_Name: Desk2 (8)
   m_TagString: Obstacle
@@ -1622,6 +1675,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 102094512}
   m_Mesh: {fileID: 4300034, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &102094516
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 102094512}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10, y: 2.2819233, z: 3.7666273}
+  m_Center: {x: 1.5896168, y: -1.1314917, z: -0.7439103}
 --- !u!1 &102726526
 GameObject:
   m_ObjectHideFlags: 0
@@ -1632,6 +1697,8 @@ GameObject:
   - component: {fileID: 102726527}
   - component: {fileID: 102726529}
   - component: {fileID: 102726528}
+  - component: {fileID: 102726530}
+  - component: {fileID: 102726531}
   m_Layer: 0
   m_Name: Wall2 (2)
   m_TagString: Obstacle
@@ -1667,7 +1734,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 176ba9d2085a79b448cefcb3e07ea37e, type: 2}
+  - {fileID: 2100000, guid: 3a0ed3e21ab2e924c8fc4a03f9704948, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1695,6 +1762,30 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 102726526}
   m_Mesh: {fileID: 4300012, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &102726530
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 102726526}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.000002, y: 10, z: 0.6259624}
+  m_Center: {x: -5.000001, y: 5, z: -0.31298286}
+--- !u!65 &102726531
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 102726526}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.000002, y: 10, z: 0.6259624}
+  m_Center: {x: -5.000001, y: 5, z: -0.31298286}
 --- !u!1 &103446385
 GameObject:
   m_ObjectHideFlags: 0
@@ -1751,6 +1842,7 @@ GameObject:
   - component: {fileID: 107360635}
   - component: {fileID: 107360637}
   - component: {fileID: 107360636}
+  - component: {fileID: 107360638}
   m_Layer: 0
   m_Name: Wall2 (15)
   m_TagString: Obstacle
@@ -1814,6 +1906,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 107360634}
   m_Mesh: {fileID: 4300012, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &107360638
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 107360634}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.000002, y: 10, z: 0.6259624}
+  m_Center: {x: -5.000001, y: 5, z: -0.31298095}
 --- !u!1 &117478594
 GameObject:
   m_ObjectHideFlags: 0
@@ -2241,6 +2345,7 @@ GameObject:
   - component: {fileID: 125196059}
   - component: {fileID: 125196061}
   - component: {fileID: 125196060}
+  - component: {fileID: 125196062}
   m_Layer: 0
   m_Name: TV3 (1)
   m_TagString: Untagged
@@ -2304,6 +2409,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 125196058}
   m_Mesh: {fileID: 4300006, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &125196062
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 125196058}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.0599847, y: 2.4473372, z: 0.97721833}
+  m_Center: {x: -0.0000009536744, y: -0.00000011920929, z: -0.000004053116}
 --- !u!1 &139856834
 GameObject:
   m_ObjectHideFlags: 0
@@ -2387,6 +2504,7 @@ GameObject:
   - component: {fileID: 143221352}
   - component: {fileID: 143221354}
   - component: {fileID: 143221353}
+  - component: {fileID: 143221355}
   m_Layer: 0
   m_Name: Wall1 (6)
   m_TagString: Obstacle
@@ -2450,6 +2568,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 143221351}
   m_Mesh: {fileID: 4300014, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &143221355
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 143221351}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.000002, y: 10, z: 0.6259624}
+  m_Center: {x: -5.0000005, y: 5, z: -0.31297714}
 --- !u!1 &143801218
 GameObject:
   m_ObjectHideFlags: 0
@@ -2460,6 +2590,7 @@ GameObject:
   - component: {fileID: 143801219}
   - component: {fileID: 143801221}
   - component: {fileID: 143801220}
+  - component: {fileID: 143801222}
   m_Layer: 0
   m_Name: Desk1 (14)
   m_TagString: Untagged
@@ -2523,6 +2654,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 143801218}
   m_Mesh: {fileID: 4300008, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &143801222
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 143801218}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10, y: 2.2819233, z: 3.7666273}
+  m_Center: {x: 1.589613, y: -1.1314917, z: -0.7439103}
 --- !u!1 &145419544
 GameObject:
   m_ObjectHideFlags: 0
@@ -2692,6 +2835,7 @@ GameObject:
   - component: {fileID: 162638864}
   - component: {fileID: 162638866}
   - component: {fileID: 162638865}
+  - component: {fileID: 162638867}
   m_Layer: 0
   m_Name: TV1 (1)
   m_TagString: Untagged
@@ -2755,6 +2899,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 162638863}
   m_Mesh: {fileID: 4300040, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &162638867
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 162638863}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.059984, y: 2.4473374, z: 0.97721815}
+  m_Center: {x: -0.0000009536743, y: 0.00000011920929, z: -0.00000023841858}
 --- !u!1 &168392810
 GameObject:
   m_ObjectHideFlags: 0
@@ -2765,6 +2921,7 @@ GameObject:
   - component: {fileID: 168392811}
   - component: {fileID: 168392813}
   - component: {fileID: 168392812}
+  - component: {fileID: 168392814}
   m_Layer: 0
   m_Name: Desk1 (14)
   m_TagString: Obstacle
@@ -2829,6 +2986,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 168392810}
   m_Mesh: {fileID: 4300008, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &168392814
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 168392810}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10, y: 2.2819233, z: 3.7666273}
+  m_Center: {x: 1.5896139, y: -1.1314917, z: -0.7439103}
 --- !u!1 &172743881
 GameObject:
   m_ObjectHideFlags: 0
@@ -2839,6 +3008,7 @@ GameObject:
   - component: {fileID: 172743882}
   - component: {fileID: 172743884}
   - component: {fileID: 172743883}
+  - component: {fileID: 172743885}
   m_Layer: 0
   m_Name: Sofa1 (5)
   m_TagString: Obstacle
@@ -2902,6 +3072,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 172743881}
   m_Mesh: {fileID: 4300016, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &172743885
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 172743881}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.5703125, y: 2.3051126, z: 2.1759496}
+  m_Center: {x: -1.2387352, y: 1.1525565, z: -1.0873349}
 --- !u!1 &175380127
 GameObject:
   m_ObjectHideFlags: 0
@@ -2985,6 +3167,7 @@ GameObject:
   - component: {fileID: 184358919}
   - component: {fileID: 184358921}
   - component: {fileID: 184358920}
+  - component: {fileID: 184358922}
   m_Layer: 0
   m_Name: Doors (4)
   m_TagString: Obstacle
@@ -3048,6 +3231,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 184358918}
   m_Mesh: {fileID: 4300022, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &184358922
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 184358918}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.6582193, y: 6.0715556, z: 0.42747745}
+  m_Center: {x: 1.8291097, y: 2.9963028, z: 0.13373843}
 --- !u!1 &186350814
 GameObject:
   m_ObjectHideFlags: 0
@@ -3187,6 +3382,7 @@ GameObject:
   - component: {fileID: 210254869}
   - component: {fileID: 210254871}
   - component: {fileID: 210254870}
+  - component: {fileID: 210254872}
   m_Layer: 0
   m_Name: Table2 (2)
   m_TagString: Obstacle
@@ -3250,6 +3446,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 210254868}
   m_Mesh: {fileID: 4300044, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &210254872
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 210254868}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.5810623, y: 1.1256785, z: 2.581345}
+  m_Center: {x: -1.2537689, y: 0.5628396, z: -1.2906725}
 --- !u!1 &211899403
 GameObject:
   m_ObjectHideFlags: 0
@@ -3394,6 +3602,7 @@ GameObject:
   - component: {fileID: 214034729}
   - component: {fileID: 214034731}
   - component: {fileID: 214034730}
+  - component: {fileID: 214034732}
   m_Layer: 0
   m_Name: Table3
   m_TagString: Obstacle
@@ -3457,6 +3666,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 214034728}
   m_Mesh: {fileID: 4300046, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &214034732
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 214034728}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.5810623, y: 1.1256785, z: 2.581345}
+  m_Center: {x: -1.2537689, y: 0.5628397, z: -1.2906725}
 --- !u!1 &217809354
 GameObject:
   m_ObjectHideFlags: 0
@@ -3467,6 +3688,7 @@ GameObject:
   - component: {fileID: 217809355}
   - component: {fileID: 217809357}
   - component: {fileID: 217809356}
+  - component: {fileID: 217809358}
   m_Layer: 0
   m_Name: Desk2 (7)
   m_TagString: Obstacle
@@ -3530,6 +3752,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 217809354}
   m_Mesh: {fileID: 4300034, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &217809358
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 217809354}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10, y: 2.2819233, z: 3.7666273}
+  m_Center: {x: 1.589613, y: -1.1314917, z: -0.7439103}
 --- !u!1 &221334563
 GameObject:
   m_ObjectHideFlags: 0
@@ -3613,6 +3847,7 @@ GameObject:
   - component: {fileID: 223398449}
   - component: {fileID: 223398451}
   - component: {fileID: 223398450}
+  - component: {fileID: 223398452}
   m_Layer: 0
   m_Name: Desk1 (4)
   m_TagString: Untagged
@@ -3676,6 +3911,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 223398448}
   m_Mesh: {fileID: 4300008, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &223398452
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 223398448}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.000002, y: 2.2819233, z: 3.7666283}
+  m_Center: {x: 1.5896152, y: -1.1314917, z: -0.7439086}
 --- !u!1 &224686225
 GameObject:
   m_ObjectHideFlags: 0
@@ -4059,6 +4306,7 @@ GameObject:
   - component: {fileID: 249119006}
   - component: {fileID: 249119008}
   - component: {fileID: 249119007}
+  - component: {fileID: 249119009}
   m_Layer: 0
   m_Name: Desk3 (3)
   m_TagString: Obstacle
@@ -4122,6 +4370,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 249119005}
   m_Mesh: {fileID: 4300042, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &249119009
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 249119005}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10, y: 2.2819233, z: 3.7666276}
+  m_Center: {x: 1.589613, y: -1.1314917, z: -0.7439104}
 --- !u!1 &254851661
 GameObject:
   m_ObjectHideFlags: 0
@@ -4132,6 +4392,7 @@ GameObject:
   - component: {fileID: 254851662}
   - component: {fileID: 254851664}
   - component: {fileID: 254851663}
+  - component: {fileID: 254851665}
   m_Layer: 0
   m_Name: Sofa3 (1)
   m_TagString: Obstacle
@@ -4195,6 +4456,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 254851661}
   m_Mesh: {fileID: 4300050, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &254851665
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 254851661}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.5703125, y: 2.3051126, z: 2.1759496}
+  m_Center: {x: -1.238739, y: 1.1525567, z: -1.0873349}
 --- !u!1 &255143462
 GameObject:
   m_ObjectHideFlags: 0
@@ -4570,6 +4843,7 @@ GameObject:
   - component: {fileID: 282714687}
   - component: {fileID: 282714689}
   - component: {fileID: 282714688}
+  - component: {fileID: 282714690}
   m_Layer: 0
   m_Name: Desk1
   m_TagString: Untagged
@@ -4633,6 +4907,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 282714686}
   m_Mesh: {fileID: 4300008, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &282714690
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 282714686}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.000002, y: 2.2819233, z: 3.7666283}
+  m_Center: {x: 1.5896133, y: -1.1314917, z: -0.7439086}
 --- !u!1 &283088514
 GameObject:
   m_ObjectHideFlags: 0
@@ -4713,7 +4999,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 176ba9d2085a79b448cefcb3e07ea37e, type: 2}
+  - {fileID: 2100000, guid: 3a0ed3e21ab2e924c8fc4a03f9704948, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4751,6 +5037,7 @@ GameObject:
   - component: {fileID: 285301398}
   - component: {fileID: 285301400}
   - component: {fileID: 285301399}
+  - component: {fileID: 285301401}
   m_Layer: 0
   m_Name: Sofa1 (7)
   m_TagString: Obstacle
@@ -4814,6 +5101,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 285301397}
   m_Mesh: {fileID: 4300016, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &285301401
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 285301397}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.5703125, y: 2.3051126, z: 2.1759496}
+  m_Center: {x: -1.2387352, y: 1.1525567, z: -1.0873349}
 --- !u!1 &294623021
 GameObject:
   m_ObjectHideFlags: 0
@@ -4824,6 +5123,8 @@ GameObject:
   - component: {fileID: 294623022}
   - component: {fileID: 294623024}
   - component: {fileID: 294623023}
+  - component: {fileID: 294623025}
+  - component: {fileID: 294623026}
   m_Layer: 0
   m_Name: Wall2 (1)
   m_TagString: Obstacle
@@ -4859,7 +5160,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 176ba9d2085a79b448cefcb3e07ea37e, type: 2}
+  - {fileID: 2100000, guid: 3a0ed3e21ab2e924c8fc4a03f9704948, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4887,6 +5188,30 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 294623021}
   m_Mesh: {fileID: 4300012, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &294623025
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 294623021}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.000002, y: 10, z: 0.6259624}
+  m_Center: {x: -4.999999, y: 5, z: -0.31298095}
+--- !u!65 &294623026
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 294623021}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.000002, y: 10, z: 0.6259624}
+  m_Center: {x: -4.999999, y: 5, z: -0.31298095}
 --- !u!1 &297630004
 GameObject:
   m_ObjectHideFlags: 0
@@ -5079,6 +5404,7 @@ GameObject:
   - component: {fileID: 318143255}
   - component: {fileID: 318143257}
   - component: {fileID: 318143256}
+  - component: {fileID: 318143258}
   m_Layer: 0
   m_Name: Desk1 (6)
   m_TagString: Untagged
@@ -5142,6 +5468,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 318143254}
   m_Mesh: {fileID: 4300008, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &318143258
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 318143254}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.000002, y: 2.2819233, z: 3.7666283}
+  m_Center: {x: 1.5896167, y: -1.1314917, z: -0.74390954}
 --- !u!1 &331426034
 GameObject:
   m_ObjectHideFlags: 0
@@ -5152,6 +5490,7 @@ GameObject:
   - component: {fileID: 331426035}
   - component: {fileID: 331426037}
   - component: {fileID: 331426036}
+  - component: {fileID: 331426038}
   m_Layer: 0
   m_Name: Wall1 (25)
   m_TagString: Obstacle
@@ -5187,7 +5526,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 176ba9d2085a79b448cefcb3e07ea37e, type: 2}
+  - {fileID: 2100000, guid: 3a0ed3e21ab2e924c8fc4a03f9704948, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5215,6 +5554,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 331426034}
   m_Mesh: {fileID: 4300014, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &331426038
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 331426034}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.000002, y: 10, z: 0.6259624}
+  m_Center: {x: -5.0000024, y: 5, z: -0.31297904}
 --- !u!1 &332623878
 GameObject:
   m_ObjectHideFlags: 0
@@ -5293,6 +5644,7 @@ GameObject:
   - component: {fileID: 333341089}
   - component: {fileID: 333341091}
   - component: {fileID: 333341090}
+  - component: {fileID: 333341092}
   m_Layer: 0
   m_Name: Wall1 (3)
   m_TagString: Obstacle
@@ -5356,6 +5708,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 333341088}
   m_Mesh: {fileID: 4300014, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &333341092
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 333341088}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.000002, y: 10, z: 0.6259624}
+  m_Center: {x: -5.0000024, y: 5, z: -0.31297714}
 --- !u!1 &343112793
 GameObject:
   m_ObjectHideFlags: 0
@@ -5512,6 +5876,7 @@ GameObject:
   - component: {fileID: 344778633}
   - component: {fileID: 344778635}
   - component: {fileID: 344778634}
+  - component: {fileID: 344778636}
   m_Layer: 0
   m_Name: Wall1 (28)
   m_TagString: Obstacle
@@ -5547,7 +5912,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 176ba9d2085a79b448cefcb3e07ea37e, type: 2}
+  - {fileID: 2100000, guid: 3a0ed3e21ab2e924c8fc4a03f9704948, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5575,6 +5940,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 344778632}
   m_Mesh: {fileID: 4300014, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &344778636
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 344778632}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.000002, y: 10, z: 0.6259624}
+  m_Center: {x: -5.00001, y: 5, z: -0.31297904}
 --- !u!1 &364859008
 GameObject:
   m_ObjectHideFlags: 0
@@ -5756,6 +6133,7 @@ GameObject:
   - component: {fileID: 372549186}
   - component: {fileID: 372549188}
   - component: {fileID: 372549187}
+  - component: {fileID: 372549189}
   m_Layer: 0
   m_Name: Table1
   m_TagString: Obstacle
@@ -5819,6 +6197,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 372549185}
   m_Mesh: {fileID: 4300018, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &372549189
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 372549185}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.5810626, y: 1.1256784, z: 2.581345}
+  m_Center: {x: -1.253769, y: 0.5628392, z: -1.2906764}
 --- !u!1 &383944864
 GameObject:
   m_ObjectHideFlags: 0
@@ -5878,6 +6268,7 @@ GameObject:
   - component: {fileID: 389642349}
   - component: {fileID: 389642351}
   - component: {fileID: 389642350}
+  - component: {fileID: 389642352}
   m_Layer: 0
   m_Name: Wall2 (12)
   m_TagString: Obstacle
@@ -5941,6 +6332,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 389642348}
   m_Mesh: {fileID: 4300012, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &389642352
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 389642348}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.000002, y: 10, z: 0.6259624}
+  m_Center: {x: -4.999999, y: 5, z: -0.31298476}
 --- !u!1 &392636815
 GameObject:
   m_ObjectHideFlags: 0
@@ -6024,6 +6427,7 @@ GameObject:
   - component: {fileID: 395755028}
   - component: {fileID: 395755030}
   - component: {fileID: 395755029}
+  - component: {fileID: 395755031}
   m_Layer: 0
   m_Name: Wall1 (26)
   m_TagString: Obstacle
@@ -6059,7 +6463,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 176ba9d2085a79b448cefcb3e07ea37e, type: 2}
+  - {fileID: 2100000, guid: 3a0ed3e21ab2e924c8fc4a03f9704948, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6087,6 +6491,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 395755027}
   m_Mesh: {fileID: 4300014, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &395755031
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 395755027}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.000002, y: 10, z: 0.6259624}
+  m_Center: {x: -5.0000024, y: 5, z: -0.31298095}
 --- !u!1 &402949216
 GameObject:
   m_ObjectHideFlags: 0
@@ -6170,6 +6586,7 @@ GameObject:
   - component: {fileID: 407154979}
   - component: {fileID: 407154981}
   - component: {fileID: 407154980}
+  - component: {fileID: 407154982}
   m_Layer: 0
   m_Name: Desk1
   m_TagString: Untagged
@@ -6233,6 +6650,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 407154978}
   m_Mesh: {fileID: 4300008, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &407154982
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 407154978}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.000002, y: 2.2819233, z: 3.7666283}
+  m_Center: {x: 1.5896171, y: -1.1314917, z: -0.74391145}
 --- !u!1 &408169707
 GameObject:
   m_ObjectHideFlags: 0
@@ -6243,6 +6672,7 @@ GameObject:
   - component: {fileID: 408169708}
   - component: {fileID: 408169710}
   - component: {fileID: 408169709}
+  - component: {fileID: 408169711}
   m_Layer: 0
   m_Name: Desk1 (1)
   m_TagString: Untagged
@@ -6306,6 +6736,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 408169707}
   m_Mesh: {fileID: 4300008, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &408169711
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 408169707}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.000005, y: 2.2819233, z: 3.7666295}
+  m_Center: {x: 1.5896137, y: -1.1314917, z: -0.74391824}
 --- !u!1 &412759587
 GameObject:
   m_ObjectHideFlags: 0
@@ -6316,6 +6758,7 @@ GameObject:
   - component: {fileID: 412759588}
   - component: {fileID: 412759590}
   - component: {fileID: 412759589}
+  - component: {fileID: 412759591}
   m_Layer: 0
   m_Name: Desk1 (9)
   m_TagString: Obstacle
@@ -6379,6 +6822,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 412759587}
   m_Mesh: {fileID: 4300008, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &412759591
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 412759587}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.000002, y: 2.2819233, z: 3.7666283}
+  m_Center: {x: 1.5896162, y: -1.1314917, z: -0.7439105}
 --- !u!1 &416498583
 GameObject:
   m_ObjectHideFlags: 0
@@ -6424,7 +6879,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 176ba9d2085a79b448cefcb3e07ea37e, type: 2}
+  - {fileID: 2100000, guid: 3a0ed3e21ab2e924c8fc4a03f9704948, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6497,7 +6952,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 176ba9d2085a79b448cefcb3e07ea37e, type: 2}
+  - {fileID: 2100000, guid: 3a0ed3e21ab2e924c8fc4a03f9704948, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6681,6 +7136,7 @@ GameObject:
   - component: {fileID: 440289288}
   - component: {fileID: 440289290}
   - component: {fileID: 440289289}
+  - component: {fileID: 440289291}
   m_Layer: 0
   m_Name: Desk1 (13)
   m_TagString: Obstacle
@@ -6744,6 +7200,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 440289287}
   m_Mesh: {fileID: 4300008, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &440289291
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 440289287}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.000002, y: 2.2819233, z: 3.7666283}
+  m_Center: {x: 1.5896133, y: -1.1314917, z: -0.7439124}
 --- !u!1 &443199166
 GameObject:
   m_ObjectHideFlags: 0
@@ -6754,6 +7222,7 @@ GameObject:
   - component: {fileID: 443199167}
   - component: {fileID: 443199169}
   - component: {fileID: 443199168}
+  - component: {fileID: 443199170}
   m_Layer: 0
   m_Name: Wall2 (16)
   m_TagString: Obstacle
@@ -6817,6 +7286,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 443199166}
   m_Mesh: {fileID: 4300012, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &443199170
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 443199166}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.000002, y: 10, z: 0.6259624}
+  m_Center: {x: -5.000001, y: 5, z: -0.31298095}
 --- !u!1 &447359980
 GameObject:
   m_ObjectHideFlags: 0
@@ -6900,6 +7381,7 @@ GameObject:
   - component: {fileID: 456737846}
   - component: {fileID: 456737848}
   - component: {fileID: 456737847}
+  - component: {fileID: 456737849}
   m_Layer: 0
   m_Name: Sofa2 (8)
   m_TagString: Obstacle
@@ -6963,6 +7445,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 456737845}
   m_Mesh: {fileID: 4300048, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &456737849
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 456737845}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.5703125, y: 2.3051126, z: 2.1759496}
+  m_Center: {x: -1.2387352, y: 1.1525565, z: -1.0873349}
 --- !u!1 &461972234
 GameObject:
   m_ObjectHideFlags: 0
@@ -6973,6 +7467,7 @@ GameObject:
   - component: {fileID: 461972235}
   - component: {fileID: 461972237}
   - component: {fileID: 461972236}
+  - component: {fileID: 461972238}
   m_Layer: 0
   m_Name: Wall1 (10)
   m_TagString: Obstacle
@@ -7036,6 +7531,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 461972234}
   m_Mesh: {fileID: 4300052, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &461972238
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 461972234}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.000002, y: 10, z: 0.6259624}
+  m_Center: {x: -5.000001, y: 5, z: -0.31298476}
 --- !u!1 &470847965
 GameObject:
   m_ObjectHideFlags: 0
@@ -7046,6 +7553,7 @@ GameObject:
   - component: {fileID: 470847966}
   - component: {fileID: 470847968}
   - component: {fileID: 470847967}
+  - component: {fileID: 470847969}
   m_Layer: 0
   m_Name: Sofa2
   m_TagString: Obstacle
@@ -7109,6 +7617,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 470847965}
   m_Mesh: {fileID: 4300048, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &470847969
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 470847965}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.5703125, y: 2.3051126, z: 2.1759496}
+  m_Center: {x: -1.2387352, y: 1.1525565, z: -1.0873349}
 --- !u!1 &471725839
 GameObject:
   m_ObjectHideFlags: 0
@@ -7245,6 +7765,7 @@ GameObject:
   - component: {fileID: 479631862}
   - component: {fileID: 479631864}
   - component: {fileID: 479631863}
+  - component: {fileID: 479631865}
   m_Layer: 0
   m_Name: Desk1 (15)
   m_TagString: Obstacle
@@ -7309,6 +7830,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 479631861}
   m_Mesh: {fileID: 4300008, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &479631865
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 479631861}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10, y: 2.2819233, z: 3.7666273}
+  m_Center: {x: 1.5896125, y: -1.1314917, z: -0.7439103}
 --- !u!1 &481956117
 GameObject:
   m_ObjectHideFlags: 0
@@ -7405,6 +7938,7 @@ GameObject:
   - component: {fileID: 484963939}
   - component: {fileID: 484963941}
   - component: {fileID: 484963940}
+  - component: {fileID: 484963942}
   m_Layer: 0
   m_Name: Desk1 (2)
   m_TagString: Untagged
@@ -7468,6 +8002,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 484963938}
   m_Mesh: {fileID: 4300008, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &484963942
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 484963938}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.000002, y: 2.2819233, z: 3.7666283}
+  m_Center: {x: 1.5896143, y: -1.1314917, z: -0.7439067}
 --- !u!1 &499867957
 GameObject:
   m_ObjectHideFlags: 0
@@ -7624,6 +8170,7 @@ GameObject:
   - component: {fileID: 502023226}
   - component: {fileID: 502023228}
   - component: {fileID: 502023227}
+  - component: {fileID: 502023229}
   m_Layer: 0
   m_Name: Wall1 (23)
   m_TagString: Obstacle
@@ -7659,7 +8206,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 176ba9d2085a79b448cefcb3e07ea37e, type: 2}
+  - {fileID: 2100000, guid: 3a0ed3e21ab2e924c8fc4a03f9704948, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -7687,6 +8234,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 502023225}
   m_Mesh: {fileID: 4300014, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &502023229
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 502023225}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.000002, y: 10, z: 0.6259624}
+  m_Center: {x: -5.0000024, y: 5, z: -0.31298095}
 --- !u!1001 &508018026
 Prefab:
   m_ObjectHideFlags: 0
@@ -7972,6 +8531,7 @@ GameObject:
   - component: {fileID: 517963856}
   - component: {fileID: 517963858}
   - component: {fileID: 517963857}
+  - component: {fileID: 517963859}
   m_Layer: 0
   m_Name: Desk1 (2)
   m_TagString: Untagged
@@ -8035,6 +8595,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 517963855}
   m_Mesh: {fileID: 4300008, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &517963859
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 517963855}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.000002, y: 2.2819233, z: 3.7666283}
+  m_Center: {x: 1.5896133, y: -1.1314917, z: -0.7439124}
 --- !u!1 &523678322
 GameObject:
   m_ObjectHideFlags: 0
@@ -8191,6 +8763,7 @@ GameObject:
   - component: {fileID: 543389201}
   - component: {fileID: 543389203}
   - component: {fileID: 543389202}
+  - component: {fileID: 543389204}
   m_Layer: 0
   m_Name: Doors (2)
   m_TagString: Obstacle
@@ -8254,6 +8827,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 543389200}
   m_Mesh: {fileID: 4300022, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &543389204
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 543389200}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.6582189, y: 6.0715556, z: 0.42747742}
+  m_Center: {x: 1.8291094, y: 2.9963028, z: 0.13373841}
 --- !u!1 &551712515
 GameObject:
   m_ObjectHideFlags: 0
@@ -8264,6 +8849,7 @@ GameObject:
   - component: {fileID: 551712516}
   - component: {fileID: 551712518}
   - component: {fileID: 551712517}
+  - component: {fileID: 551712519}
   m_Layer: 0
   m_Name: Desk1 (4)
   m_TagString: Untagged
@@ -8327,6 +8913,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 551712515}
   m_Mesh: {fileID: 4300008, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &551712519
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 551712515}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.000002, y: 2.2819233, z: 3.7666283}
+  m_Center: {x: 1.5896152, y: -1.1314917, z: -0.7439086}
 --- !u!1 &551769946
 GameObject:
   m_ObjectHideFlags: 0
@@ -8337,6 +8935,7 @@ GameObject:
   - component: {fileID: 551769947}
   - component: {fileID: 551769949}
   - component: {fileID: 551769948}
+  - component: {fileID: 551769950}
   m_Layer: 0
   m_Name: Desk1 (15)
   m_TagString: Untagged
@@ -8400,6 +8999,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 551769946}
   m_Mesh: {fileID: 4300008, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &551769950
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 551769946}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10, y: 2.2819233, z: 3.7666273}
+  m_Center: {x: 1.5896149, y: -1.1314917, z: -0.7439103}
 --- !u!1 &552295566
 GameObject:
   m_ObjectHideFlags: 0
@@ -8410,6 +9021,7 @@ GameObject:
   - component: {fileID: 552295567}
   - component: {fileID: 552295569}
   - component: {fileID: 552295568}
+  - component: {fileID: 552295570}
   m_Layer: 0
   m_Name: Sofa2 (4)
   m_TagString: Obstacle
@@ -8473,6 +9085,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 552295566}
   m_Mesh: {fileID: 4300048, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &552295570
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 552295566}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.5703125, y: 2.3051126, z: 2.1759496}
+  m_Center: {x: -1.2387352, y: 1.1525567, z: -1.0873349}
 --- !u!1 &552552150
 GameObject:
   m_ObjectHideFlags: 0
@@ -8572,7 +9196,8 @@ Transform:
   m_LocalRotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 22.818005, y: 2.6502404, z: 47.308453}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 958052844}
   m_Father: {fileID: 1560335149}
   m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -8775,6 +9400,7 @@ GameObject:
   - component: {fileID: 585410085}
   - component: {fileID: 585410087}
   - component: {fileID: 585410086}
+  - component: {fileID: 585410088}
   m_Layer: 0
   m_Name: Wall2 (10)
   m_TagString: Obstacle
@@ -8810,7 +9436,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 176ba9d2085a79b448cefcb3e07ea37e, type: 2}
+  - {fileID: 2100000, guid: 3a0ed3e21ab2e924c8fc4a03f9704948, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -8838,6 +9464,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 585410084}
   m_Mesh: {fileID: 4300012, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &585410088
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 585410084}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10, y: 10, z: 0.6259622}
+  m_Center: {x: -5, y: 5, z: -0.31298086}
 --- !u!1 &589653025
 GameObject:
   m_ObjectHideFlags: 0
@@ -8926,6 +9564,7 @@ GameObject:
   - component: {fileID: 596860167}
   - component: {fileID: 596860169}
   - component: {fileID: 596860168}
+  - component: {fileID: 596860170}
   m_Layer: 0
   m_Name: Desk2 (4)
   m_TagString: Obstacle
@@ -8989,6 +9628,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 596860166}
   m_Mesh: {fileID: 4300034, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &596860170
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 596860166}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10, y: 2.2819233, z: 3.7666273}
+  m_Center: {x: 1.5896168, y: -1.1314917, z: -0.7439103}
 --- !u!1 &600425130
 GameObject:
   m_ObjectHideFlags: 0
@@ -9062,6 +9713,48 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 600425130}
   m_Mesh: {fileID: 4300004, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!1001 &606423932
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1336170427}
+    m_Modifications:
+    - target: {fileID: 4334784962717672, guid: 5ba78c5366204054691969420d38ca0c, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4334784962717672, guid: 5ba78c5366204054691969420d38ca0c, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4334784962717672, guid: 5ba78c5366204054691969420d38ca0c, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4334784962717672, guid: 5ba78c5366204054691969420d38ca0c, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4334784962717672, guid: 5ba78c5366204054691969420d38ca0c, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4334784962717672, guid: 5ba78c5366204054691969420d38ca0c, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4334784962717672, guid: 5ba78c5366204054691969420d38ca0c, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4334784962717672, guid: 5ba78c5366204054691969420d38ca0c, type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 5ba78c5366204054691969420d38ca0c, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &608743181
 GameObject:
   m_ObjectHideFlags: 0
@@ -9536,6 +10229,7 @@ GameObject:
   - component: {fileID: 624176671}
   - component: {fileID: 624176673}
   - component: {fileID: 624176672}
+  - component: {fileID: 624176674}
   m_Layer: 0
   m_Name: Wall1 (21)
   m_TagString: Obstacle
@@ -9599,6 +10293,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 624176670}
   m_Mesh: {fileID: 4300014, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &624176674
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 624176670}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10, y: 10, z: 0.6259622}
+  m_Center: {x: -5.000001, y: 5, z: -0.31298086}
 --- !u!224 &628946147 stripped
 RectTransform:
   m_PrefabParentObject: {fileID: 224790962005217262, guid: ec4fb837cf1bfb149b3aec445e808295,
@@ -9721,6 +10427,7 @@ GameObject:
   - component: {fileID: 636553014}
   - component: {fileID: 636553016}
   - component: {fileID: 636553015}
+  - component: {fileID: 636553017}
   m_Layer: 0
   m_Name: Sofa3 (2)
   m_TagString: Obstacle
@@ -9784,6 +10491,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 636553013}
   m_Mesh: {fileID: 4300050, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &636553017
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 636553013}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.5703125, y: 2.3051126, z: 2.1759496}
+  m_Center: {x: -1.2387371, y: 1.1525568, z: -1.0873349}
 --- !u!1 &640031310
 GameObject:
   m_ObjectHideFlags: 0
@@ -10013,6 +10732,7 @@ GameObject:
   - component: {fileID: 649794939}
   - component: {fileID: 649794941}
   - component: {fileID: 649794940}
+  - component: {fileID: 649794942}
   m_Layer: 0
   m_Name: Sofa1
   m_TagString: Obstacle
@@ -10076,6 +10796,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 649794938}
   m_Mesh: {fileID: 4300016, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &649794942
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 649794938}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.5703125, y: 2.3051126, z: 2.1759496}
+  m_Center: {x: -1.2387352, y: 1.1525565, z: -1.0873349}
 --- !u!1 &649970814
 GameObject:
   m_ObjectHideFlags: 0
@@ -10159,6 +10891,7 @@ GameObject:
   - component: {fileID: 662750901}
   - component: {fileID: 662750903}
   - component: {fileID: 662750902}
+  - component: {fileID: 662750904}
   m_Layer: 0
   m_Name: Desk1 (3)
   m_TagString: Obstacle
@@ -10222,6 +10955,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 662750900}
   m_Mesh: {fileID: 4300008, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &662750904
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 662750900}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.000002, y: 2.2819233, z: 3.7666283}
+  m_Center: {x: 1.5896114, y: -1.1314917, z: -0.7439057}
 --- !u!1 &705736569
 GameObject:
   m_ObjectHideFlags: 0
@@ -10232,6 +10977,7 @@ GameObject:
   - component: {fileID: 705736570}
   - component: {fileID: 705736572}
   - component: {fileID: 705736571}
+  - component: {fileID: 705736573}
   m_Layer: 0
   m_Name: Object016 (2)
   m_TagString: Untagged
@@ -10295,6 +11041,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 705736569}
   m_Mesh: {fileID: 4300026, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &705736573
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 705736569}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.057246, y: 4.549305, z: 1.5470015}
+  m_Center: {x: -5.028623, y: 2.2746515, z: 0.77349764}
 --- !u!1 &711502228
 GameObject:
   m_ObjectHideFlags: 0
@@ -10305,6 +11063,7 @@ GameObject:
   - component: {fileID: 711502229}
   - component: {fileID: 711502231}
   - component: {fileID: 711502230}
+  - component: {fileID: 711502232}
   m_Layer: 0
   m_Name: Desk3 (2)
   m_TagString: Obstacle
@@ -10369,6 +11128,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 711502228}
   m_Mesh: {fileID: 4300042, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &711502232
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 711502228}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.000002, y: 2.2819233, z: 3.7666278}
+  m_Center: {x: 1.5896133, y: -1.1314917, z: -0.7439104}
 --- !u!1 &715023211
 GameObject:
   m_ObjectHideFlags: 0
@@ -10546,6 +11317,7 @@ GameObject:
   - component: {fileID: 723000121}
   - component: {fileID: 723000123}
   - component: {fileID: 723000122}
+  - component: {fileID: 723000124}
   m_Layer: 0
   m_Name: Wall1 (19)
   m_TagString: Obstacle
@@ -10609,6 +11381,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 723000120}
   m_Mesh: {fileID: 4300014, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &723000124
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 723000120}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10, y: 10, z: 0.6259622}
+  m_Center: {x: -5.000001, y: 5, z: -0.31298086}
 --- !u!1 &739083583
 GameObject:
   m_ObjectHideFlags: 0
@@ -10870,15 +11654,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4070767825563858, guid: 4169c31376a01a148bee185ed46ddffc, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -16.174465
+      value: -3.47
       objectReference: {fileID: 0}
     - target: {fileID: 4070767825563858, guid: 4169c31376a01a148bee185ed46ddffc, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 11.36
+      value: 0.06
       objectReference: {fileID: 0}
     - target: {fileID: 4070767825563858, guid: 4169c31376a01a148bee185ed46ddffc, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -48
+      value: 0.57
       objectReference: {fileID: 0}
     - target: {fileID: 4070767825563858, guid: 4169c31376a01a148bee185ed46ddffc, type: 2}
       propertyPath: m_LocalRotation.x
@@ -10886,7 +11670,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4070767825563858, guid: 4169c31376a01a148bee185ed46ddffc, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: 0.825557
       objectReference: {fileID: 0}
     - target: {fileID: 4070767825563858, guid: 4169c31376a01a148bee185ed46ddffc, type: 2}
       propertyPath: m_LocalRotation.z
@@ -10894,7 +11678,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4070767825563858, guid: 4169c31376a01a148bee185ed46ddffc, type: 2}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.56431884
       objectReference: {fileID: 0}
     - target: {fileID: 4070767825563858, guid: 4169c31376a01a148bee185ed46ddffc, type: 2}
       propertyPath: m_RootOrder
@@ -10905,7 +11689,64 @@ Prefab:
       propertyPath: dialogueController
       value: 
       objectReference: {fileID: 2056887446}
-    m_RemovedComponents: []
+    - target: {fileID: 4070767825563858, guid: 4169c31376a01a148bee185ed46ddffc, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4070767825563858, guid: 4169c31376a01a148bee185ed46ddffc, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4070767825563858, guid: 4169c31376a01a148bee185ed46ddffc, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 65365337155389448, guid: 4169c31376a01a148bee185ed46ddffc,
+        type: 2}
+      propertyPath: m_Size.y
+      value: 4.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 65365337155389448, guid: 4169c31376a01a148bee185ed46ddffc,
+        type: 2}
+      propertyPath: m_Center.y
+      value: 1.82
+      objectReference: {fileID: 0}
+    - target: {fileID: 4070767825563858, guid: 4169c31376a01a148bee185ed46ddffc, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 111.29
+      objectReference: {fileID: 0}
+    - target: {fileID: 114288387229802584, guid: 4169c31376a01a148bee185ed46ddffc,
+        type: 2}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: "Cze\u015B\u0107, release za 5 minut"
+      objectReference: {fileID: 0}
+    - target: {fileID: 114288387229802584, guid: 4169c31376a01a148bee185ed46ddffc,
+        type: 2}
+      propertyPath: dialogue.sentences.Array.data[1]
+      value: "Spokojnie dodamy jeszcze z 5 nowych ficzer\xF3w :)"
+      objectReference: {fileID: 0}
+    - target: {fileID: 114288387229802584, guid: 4169c31376a01a148bee185ed46ddffc,
+        type: 2}
+      propertyPath: dialogue.sentences.Array.data[2]
+      value: "Napraw te\u017C bugi, a potem skocz do HR'u po umowe, narazie"
+      objectReference: {fileID: 0}
+    - target: {fileID: 65365337155389448, guid: 4169c31376a01a148bee185ed46ddffc,
+        type: 2}
+      propertyPath: m_Center.z
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 65365337155389448, guid: 4169c31376a01a148bee185ed46ddffc,
+        type: 2}
+      propertyPath: m_Center.x
+      value: -0.21
+      objectReference: {fileID: 0}
+    - target: {fileID: 65365337155389448, guid: 4169c31376a01a148bee185ed46ddffc,
+        type: 2}
+      propertyPath: m_Size.x
+      value: 1.18
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 33610403528899738, guid: 4169c31376a01a148bee185ed46ddffc, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 4169c31376a01a148bee185ed46ddffc, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &763215733
@@ -10991,6 +11832,7 @@ GameObject:
   - component: {fileID: 763352862}
   - component: {fileID: 763352864}
   - component: {fileID: 763352863}
+  - component: {fileID: 763352865}
   m_Layer: 0
   m_Name: Table2
   m_TagString: Obstacle
@@ -11054,6 +11896,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 763352861}
   m_Mesh: {fileID: 4300044, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &763352865
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 763352861}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.5810623, y: 1.1256785, z: 2.581345}
+  m_Center: {x: -1.2537689, y: 0.56283957, z: -1.2906725}
 --- !u!1 &763453450
 GameObject:
   m_ObjectHideFlags: 0
@@ -11064,6 +11918,7 @@ GameObject:
   - component: {fileID: 763453451}
   - component: {fileID: 763453453}
   - component: {fileID: 763453452}
+  - component: {fileID: 763453454}
   m_Layer: 0
   m_Name: Wall1 (5)
   m_TagString: Obstacle
@@ -11127,6 +11982,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 763453450}
   m_Mesh: {fileID: 4300014, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &763453454
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 763453450}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.000002, y: 10, z: 0.6259624}
+  m_Center: {x: -5.0000024, y: 5, z: -0.31298095}
 --- !u!1 &766374592
 GameObject:
   m_ObjectHideFlags: 0
@@ -11206,6 +12073,7 @@ GameObject:
   - component: {fileID: 771433970}
   - component: {fileID: 771433972}
   - component: {fileID: 771433971}
+  - component: {fileID: 771433973}
   m_Layer: 0
   m_Name: Wall1 (11)
   m_TagString: Obstacle
@@ -11269,6 +12137,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 771433969}
   m_Mesh: {fileID: 4300052, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &771433973
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 771433969}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.000002, y: 10, z: 0.6259624}
+  m_Center: {x: -5.0000014, y: 5, z: -0.31298095}
 --- !u!1 &780339970
 GameObject:
   m_ObjectHideFlags: 0
@@ -11453,6 +12333,7 @@ GameObject:
   - component: {fileID: 791038363}
   - component: {fileID: 791038365}
   - component: {fileID: 791038364}
+  - component: {fileID: 791038366}
   m_Layer: 0
   m_Name: Desk2
   m_TagString: Obstacle
@@ -11516,6 +12397,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 791038362}
   m_Mesh: {fileID: 4300034, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &791038366
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 791038362}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.000002, y: 2.2819233, z: 3.7666283}
+  m_Center: {x: 1.5896147, y: -1.1314917, z: -0.7439143}
 --- !u!1 &792869579
 GameObject:
   m_ObjectHideFlags: 0
@@ -11599,6 +12492,7 @@ GameObject:
   - component: {fileID: 801684253}
   - component: {fileID: 801684255}
   - component: {fileID: 801684254}
+  - component: {fileID: 801684256}
   m_Layer: 0
   m_Name: Doors
   m_TagString: Obstacle
@@ -11612,13 +12506,13 @@ Transform:
   m_PrefabParentObject: {fileID: 400022, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 801684252}
-  m_LocalRotation: {x: -0, y: 0.99709874, z: -0, w: 0.0761192}
+  m_LocalRotation: {x: 0, y: 0.9939418, z: 0, w: 0.10990785}
   m_LocalPosition: {x: 32.528004, y: 2.8702404, z: -15.9015465}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1560335149}
   m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 0, y: 171.26901, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 167.38, z: 0}
 --- !u!23 &801684254
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11662,6 +12556,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 801684252}
   m_Mesh: {fileID: 4300022, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &801684256
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 801684252}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.6582189, y: 6.0715556, z: 0.42747742}
+  m_Center: {x: 1.8291094, y: 2.9963028, z: 0.1337365}
 --- !u!1 &810787908
 GameObject:
   m_ObjectHideFlags: 0
@@ -11696,6 +12602,10 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   enemySpawner: {fileID: 383944865}
+  audioSource: {fileID: 2143259054}
+  level1: {fileID: 8300000, guid: f4b4223ba1c492a49ad45328e2789abe, type: 3}
+  level2: {fileID: 8300000, guid: e6a35d6b47ccb934eafd1648301e91bf, type: 3}
+  level3: {fileID: 8300000, guid: f7d69999f8206394683993d9e3b4f670, type: 3}
 --- !u!4 &810787910
 Transform:
   m_ObjectHideFlags: 0
@@ -12105,6 +13015,7 @@ GameObject:
   - component: {fileID: 832918375}
   - component: {fileID: 832918377}
   - component: {fileID: 832918376}
+  - component: {fileID: 832918378}
   m_Layer: 0
   m_Name: Desk1 (4)
   m_TagString: Untagged
@@ -12168,6 +13079,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 832918374}
   m_Mesh: {fileID: 4300008, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &832918378
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 832918374}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.000005, y: 2.2819233, z: 3.7666292}
+  m_Center: {x: 1.5896175, y: -1.1314917, z: -0.74391377}
 --- !u!1 &835210063
 GameObject:
   m_ObjectHideFlags: 0
@@ -12397,6 +13320,7 @@ GameObject:
   - component: {fileID: 847275889}
   - component: {fileID: 847275891}
   - component: {fileID: 847275890}
+  - component: {fileID: 847275892}
   m_Layer: 0
   m_Name: Desk1 (6)
   m_TagString: Untagged
@@ -12460,6 +13384,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 847275888}
   m_Mesh: {fileID: 4300008, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &847275892
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 847275888}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.000005, y: 2.2819233, z: 3.7666292}
+  m_Center: {x: 1.5896099, y: -1.1314917, z: -0.7439153}
 --- !u!1 &848910867
 GameObject:
   m_ObjectHideFlags: 0
@@ -12470,6 +13406,7 @@ GameObject:
   - component: {fileID: 848910868}
   - component: {fileID: 848910870}
   - component: {fileID: 848910869}
+  - component: {fileID: 848910871}
   m_Layer: 0
   m_Name: Doors (5)
   m_TagString: Obstacle
@@ -12533,6 +13470,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 848910867}
   m_Mesh: {fileID: 4300022, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &848910871
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 848910867}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.6582193, y: 6.0715556, z: 0.42747745}
+  m_Center: {x: 1.8291097, y: 2.9963028, z: 0.13373843}
 --- !u!1 &857002297
 GameObject:
   m_ObjectHideFlags: 0
@@ -12616,6 +13565,7 @@ GameObject:
   - component: {fileID: 858621779}
   - component: {fileID: 858621781}
   - component: {fileID: 858621780}
+  - component: {fileID: 858621782}
   m_Layer: 0
   m_Name: Desk2 (5)
   m_TagString: Obstacle
@@ -12679,6 +13629,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 858621778}
   m_Mesh: {fileID: 4300034, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &858621782
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 858621778}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10, y: 2.2819233, z: 3.7666273}
+  m_Center: {x: 1.5896149, y: -1.1314917, z: -0.7439103}
 --- !u!1 &870123734
 GameObject:
   m_ObjectHideFlags: 0
@@ -12689,6 +13651,7 @@ GameObject:
   - component: {fileID: 870123735}
   - component: {fileID: 870123737}
   - component: {fileID: 870123736}
+  - component: {fileID: 870123738}
   m_Layer: 0
   m_Name: TV2
   m_TagString: Untagged
@@ -12752,6 +13715,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 870123734}
   m_Mesh: {fileID: 4300032, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &870123738
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 870123734}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.059984, y: 2.4473374, z: 0.97721815}
+  m_Center: {x: -0.0000038146973, y: 0.00000059604645, z: 0.00000166893}
 --- !u!1 &874552262
 GameObject:
   m_ObjectHideFlags: 0
@@ -13037,6 +14012,7 @@ GameObject:
   - component: {fileID: 884063704}
   - component: {fileID: 884063706}
   - component: {fileID: 884063705}
+  - component: {fileID: 884063707}
   m_Layer: 0
   m_Name: Sofa1 (6)
   m_TagString: Obstacle
@@ -13100,6 +14076,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 884063703}
   m_Mesh: {fileID: 4300016, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &884063707
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 884063703}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.5703125, y: 2.3051126, z: 2.1759496}
+  m_Center: {x: -1.2387352, y: 1.1525565, z: -1.0873349}
 --- !u!1 &886981512
 GameObject:
   m_ObjectHideFlags: 0
@@ -13110,6 +14098,7 @@ GameObject:
   - component: {fileID: 886981513}
   - component: {fileID: 886981515}
   - component: {fileID: 886981514}
+  - component: {fileID: 886981516}
   m_Layer: 0
   m_Name: Wall2
   m_TagString: Obstacle
@@ -13145,7 +14134,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 176ba9d2085a79b448cefcb3e07ea37e, type: 2}
+  - {fileID: 2100000, guid: 3a0ed3e21ab2e924c8fc4a03f9704948, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -13173,6 +14162,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 886981512}
   m_Mesh: {fileID: 4300012, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &886981516
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 886981512}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10, y: 10, z: 0.6259622}
+  m_Center: {x: -5, y: 5, z: -0.31298086}
 --- !u!1 &889247503
 GameObject:
   m_ObjectHideFlags: 0
@@ -13183,6 +14184,7 @@ GameObject:
   - component: {fileID: 889247504}
   - component: {fileID: 889247506}
   - component: {fileID: 889247505}
+  - component: {fileID: 889247507}
   m_Layer: 0
   m_Name: Sofa2 (5)
   m_TagString: Obstacle
@@ -13246,6 +14248,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 889247503}
   m_Mesh: {fileID: 4300048, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &889247507
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 889247503}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.5703132, y: 2.3051126, z: 2.17595}
+  m_Center: {x: -1.2387354, y: 1.1525563, z: -1.0873351}
 --- !u!1 &897023850
 GameObject:
   m_ObjectHideFlags: 0
@@ -13475,6 +14489,7 @@ GameObject:
   - component: {fileID: 911131570}
   - component: {fileID: 911131572}
   - component: {fileID: 911131571}
+  - component: {fileID: 911131573}
   m_Layer: 0
   m_Name: Object016 (1)
   m_TagString: Untagged
@@ -13538,6 +14553,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 911131569}
   m_Mesh: {fileID: 4300026, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &911131573
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 911131569}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.057246, y: 4.549305, z: 1.5470015}
+  m_Center: {x: -5.0286193, y: 2.2746515, z: 0.77349764}
 --- !u!1 &935042121
 GameObject:
   m_ObjectHideFlags: 0
@@ -13548,6 +14575,7 @@ GameObject:
   - component: {fileID: 935042122}
   - component: {fileID: 935042124}
   - component: {fileID: 935042123}
+  - component: {fileID: 935042125}
   m_Layer: 0
   m_Name: Desk2 (11)
   m_TagString: Obstacle
@@ -13611,6 +14639,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 935042121}
   m_Mesh: {fileID: 4300034, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &935042125
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 935042121}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10, y: 2.2819233, z: 3.7666273}
+  m_Center: {x: 1.5896168, y: -1.1314917, z: -0.7439103}
 --- !u!1 &938209398
 GameObject:
   m_ObjectHideFlags: 0
@@ -13830,6 +14870,47 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 945126911}
   m_Mesh: {fileID: 4300054, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!1 &958052843
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 958052844}
+  - component: {fileID: 958052845}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &958052844
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 958052843}
+  m_LocalRotation: {x: -0.20022298, y: 0, z: 0, w: 0.9797504}
+  m_LocalPosition: {x: 0, y: -1.81, z: 0.74}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 566925037}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -23.1, y: 0, z: 0}
+--- !u!65 &958052845
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 958052843}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10, y: 2.3164477, z: 5.000001}
+  m_Center: {x: 5.000002, y: 0.77216786, z: 2.5000005}
 --- !u!1 &971997622
 GameObject:
   m_ObjectHideFlags: 0
@@ -13913,6 +14994,7 @@ GameObject:
   - component: {fileID: 975676959}
   - component: {fileID: 975676961}
   - component: {fileID: 975676960}
+  - component: {fileID: 975676962}
   m_Layer: 0
   m_Name: Table2 (3)
   m_TagString: Obstacle
@@ -13976,6 +15058,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 975676958}
   m_Mesh: {fileID: 4300044, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &975676962
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 975676958}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.581062, y: 1.1256785, z: 2.5813448}
+  m_Center: {x: -1.2537707, y: 0.5628394, z: -1.2906686}
 --- !u!1 &976790817
 GameObject:
   m_ObjectHideFlags: 0
@@ -14054,6 +15148,7 @@ GameObject:
   - component: {fileID: 976950432}
   - component: {fileID: 976950434}
   - component: {fileID: 976950433}
+  - component: {fileID: 976950435}
   m_Layer: 0
   m_Name: Wall2 (8)
   m_TagString: Obstacle
@@ -14089,7 +15184,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 176ba9d2085a79b448cefcb3e07ea37e, type: 2}
+  - {fileID: 2100000, guid: 3a0ed3e21ab2e924c8fc4a03f9704948, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -14117,6 +15212,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 976950431}
   m_Mesh: {fileID: 4300012, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &976950435
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 976950431}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10, y: 10, z: 0.6259622}
+  m_Center: {x: -5, y: 5, z: -0.31298086}
 --- !u!1001 &1002935738
 Prefab:
   m_ObjectHideFlags: 0
@@ -14215,6 +15322,11 @@ Prefab:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 137001386931196262, guid: 0e74cf81e6fd82546b4797f71ceffb81,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 262ad9410a6eddf40a8045270cdf4e5f, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0e74cf81e6fd82546b4797f71ceffb81, type: 2}
   m_IsPrefabParent: 0
@@ -14460,6 +15572,7 @@ GameObject:
   - component: {fileID: 1015372092}
   - component: {fileID: 1015372094}
   - component: {fileID: 1015372093}
+  - component: {fileID: 1015372095}
   m_Layer: 0
   m_Name: Sofa2 (2)
   m_TagString: Obstacle
@@ -14523,6 +15636,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1015372091}
   m_Mesh: {fileID: 4300048, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &1015372095
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1015372091}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.5703127, y: 2.3051126, z: 2.1759498}
+  m_Center: {x: -1.2387353, y: 1.1525567, z: -1.087335}
 --- !u!1 &1024114025
 GameObject:
   m_ObjectHideFlags: 0
@@ -14533,6 +15658,7 @@ GameObject:
   - component: {fileID: 1024114026}
   - component: {fileID: 1024114028}
   - component: {fileID: 1024114027}
+  - component: {fileID: 1024114029}
   m_Layer: 0
   m_Name: Sofa2 (3)
   m_TagString: Obstacle
@@ -14596,6 +15722,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1024114025}
   m_Mesh: {fileID: 4300048, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &1024114029
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1024114025}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.5703125, y: 2.3051126, z: 2.1759496}
+  m_Center: {x: -1.2387352, y: 1.1525567, z: -1.0873349}
 --- !u!1 &1027200962
 GameObject:
   m_ObjectHideFlags: 0
@@ -14606,6 +15744,7 @@ GameObject:
   - component: {fileID: 1027200963}
   - component: {fileID: 1027200965}
   - component: {fileID: 1027200964}
+  - component: {fileID: 1027200966}
   m_Layer: 0
   m_Name: Desk2 (3)
   m_TagString: Obstacle
@@ -14669,6 +15808,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1027200962}
   m_Mesh: {fileID: 4300034, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &1027200966
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1027200962}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10, y: 2.2819233, z: 3.7666273}
+  m_Center: {x: 1.589613, y: -1.1314917, z: -0.7439103}
 --- !u!1 &1031151273
 GameObject:
   m_ObjectHideFlags: 0
@@ -14679,6 +15830,7 @@ GameObject:
   - component: {fileID: 1031151274}
   - component: {fileID: 1031151276}
   - component: {fileID: 1031151275}
+  - component: {fileID: 1031151277}
   m_Layer: 0
   m_Name: Wall2 (17)
   m_TagString: Obstacle
@@ -14742,6 +15894,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1031151273}
   m_Mesh: {fileID: 4300012, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &1031151277
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1031151273}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.000002, y: 10, z: 0.6259624}
+  m_Center: {x: -5.000001, y: 5, z: -0.31298095}
 --- !u!1 &1035216005
 GameObject:
   m_ObjectHideFlags: 0
@@ -14752,6 +15916,7 @@ GameObject:
   - component: {fileID: 1035216006}
   - component: {fileID: 1035216008}
   - component: {fileID: 1035216007}
+  - component: {fileID: 1035216009}
   m_Layer: 0
   m_Name: Wall1 (14)
   m_TagString: Obstacle
@@ -14815,6 +15980,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1035216005}
   m_Mesh: {fileID: 4300052, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &1035216009
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1035216005}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10, y: 10, z: 0.6259622}
+  m_Center: {x: -5, y: 5, z: -0.31298086}
 --- !u!1 &1044235935
 GameObject:
   m_ObjectHideFlags: 0
@@ -14971,6 +16148,7 @@ GameObject:
   - component: {fileID: 1046353029}
   - component: {fileID: 1046353031}
   - component: {fileID: 1046353030}
+  - component: {fileID: 1046353032}
   m_Layer: 0
   m_Name: Table3 (2)
   m_TagString: Obstacle
@@ -15034,6 +16212,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1046353028}
   m_Mesh: {fileID: 4300046, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &1046353032
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1046353028}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.5810623, y: 1.1256785, z: 2.581345}
+  m_Center: {x: -1.2537689, y: 0.5628396, z: -1.2906725}
 --- !u!1 &1059588017
 GameObject:
   m_ObjectHideFlags: 0
@@ -15044,6 +16234,7 @@ GameObject:
   - component: {fileID: 1059588018}
   - component: {fileID: 1059588020}
   - component: {fileID: 1059588019}
+  - component: {fileID: 1059588021}
   m_Layer: 0
   m_Name: Wall1 (22)
   m_TagString: Obstacle
@@ -15079,7 +16270,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 176ba9d2085a79b448cefcb3e07ea37e, type: 2}
+  - {fileID: 2100000, guid: 3a0ed3e21ab2e924c8fc4a03f9704948, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -15107,6 +16298,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1059588017}
   m_Mesh: {fileID: 4300014, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &1059588021
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1059588017}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.000002, y: 10, z: 0.6259624}
+  m_Center: {x: -5.0000005, y: 5, z: -0.31298}
 --- !u!1 &1061025217
 GameObject:
   m_ObjectHideFlags: 0
@@ -15190,6 +16393,7 @@ GameObject:
   - component: {fileID: 1063754011}
   - component: {fileID: 1063754013}
   - component: {fileID: 1063754012}
+  - component: {fileID: 1063754014}
   m_Layer: 0
   m_Name: Desk1
   m_TagString: Untagged
@@ -15253,6 +16457,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1063754010}
   m_Mesh: {fileID: 4300008, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &1063754014
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1063754010}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.000002, y: 2.2819233, z: 3.7666283}
+  m_Center: {x: 1.5896133, y: -1.1314917, z: -0.7439086}
 --- !u!1 &1064542698
 GameObject:
   m_ObjectHideFlags: 0
@@ -15715,6 +16931,7 @@ GameObject:
   - component: {fileID: 1080094702}
   - component: {fileID: 1080094704}
   - component: {fileID: 1080094703}
+  - component: {fileID: 1080094705}
   m_Layer: 0
   m_Name: Desk1 (12)
   m_TagString: Obstacle
@@ -15778,6 +16995,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1080094701}
   m_Mesh: {fileID: 4300008, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &1080094705
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1080094701}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10, y: 2.2819233, z: 3.7666273}
+  m_Center: {x: 1.5896134, y: -1.1314917, z: -0.7439103}
 --- !u!1 &1091801908
 GameObject:
   m_ObjectHideFlags: 0
@@ -15968,6 +17197,7 @@ GameObject:
   - component: {fileID: 1116016318}
   - component: {fileID: 1116016320}
   - component: {fileID: 1116016319}
+  - component: {fileID: 1116016321}
   m_Layer: 0
   m_Name: Desk1
   m_TagString: Untagged
@@ -16031,6 +17261,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1116016317}
   m_Mesh: {fileID: 4300008, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &1116016321
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1116016317}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.000002, y: 2.2819233, z: 3.7666283}
+  m_Center: {x: 1.5896133, y: -1.1314917, z: -0.7439086}
 --- !u!1 &1129629419
 GameObject:
   m_ObjectHideFlags: 0
@@ -16789,6 +18031,7 @@ GameObject:
   - component: {fileID: 1189702232}
   - component: {fileID: 1189702234}
   - component: {fileID: 1189702233}
+  - component: {fileID: 1189702235}
   m_Layer: 0
   m_Name: Sofa3 (4)
   m_TagString: Obstacle
@@ -16852,6 +18095,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1189702231}
   m_Mesh: {fileID: 4300050, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &1189702235
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1189702231}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.5703125, y: 2.3051126, z: 2.1759496}
+  m_Center: {x: -1.2387428, y: 1.1525564, z: -1.087333}
 --- !u!1 &1199544682
 GameObject:
   m_ObjectHideFlags: 0
@@ -16862,6 +18117,7 @@ GameObject:
   - component: {fileID: 1199544683}
   - component: {fileID: 1199544685}
   - component: {fileID: 1199544684}
+  - component: {fileID: 1199544686}
   m_Layer: 0
   m_Name: Sofa1 (2)
   m_TagString: Obstacle
@@ -16925,6 +18181,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1199544682}
   m_Mesh: {fileID: 4300016, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &1199544686
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1199544682}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.5703125, y: 2.3051126, z: 2.1759496}
+  m_Center: {x: -1.2387352, y: 1.1525567, z: -1.0873349}
 --- !u!1 &1202582533
 GameObject:
   m_ObjectHideFlags: 0
@@ -17098,6 +18366,7 @@ GameObject:
   - component: {fileID: 1214254309}
   - component: {fileID: 1214254311}
   - component: {fileID: 1214254310}
+  - component: {fileID: 1214254312}
   m_Layer: 0
   m_Name: Sofa1 (3)
   m_TagString: Obstacle
@@ -17161,6 +18430,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1214254308}
   m_Mesh: {fileID: 4300016, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &1214254312
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1214254308}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.5703125, y: 2.3051126, z: 2.1759496}
+  m_Center: {x: -1.2387352, y: 1.1525565, z: -1.0873349}
 --- !u!1 &1240280201
 GameObject:
   m_ObjectHideFlags: 0
@@ -17171,6 +18452,7 @@ GameObject:
   - component: {fileID: 1240280202}
   - component: {fileID: 1240280204}
   - component: {fileID: 1240280203}
+  - component: {fileID: 1240280205}
   m_Layer: 0
   m_Name: Desk1 (7)
   m_TagString: Untagged
@@ -17234,6 +18516,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1240280201}
   m_Mesh: {fileID: 4300008, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &1240280205
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1240280201}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.000002, y: 2.2819233, z: 3.7666283}
+  m_Center: {x: 1.5896171, y: -1.1314917, z: -0.7439105}
 --- !u!1 &1243788034
 GameObject:
   m_ObjectHideFlags: 0
@@ -17549,6 +18843,7 @@ GameObject:
   - component: {fileID: 1257563512}
   - component: {fileID: 1257563514}
   - component: {fileID: 1257563513}
+  - component: {fileID: 1257563515}
   m_Layer: 0
   m_Name: Desk1 (2)
   m_TagString: Untagged
@@ -17612,6 +18907,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1257563511}
   m_Mesh: {fileID: 4300008, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &1257563515
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1257563511}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.000002, y: 2.2819233, z: 3.7666283}
+  m_Center: {x: 1.5896133, y: -1.1314917, z: -0.7439143}
 --- !u!1 &1258747426
 GameObject:
   m_ObjectHideFlags: 0
@@ -17695,6 +19002,7 @@ GameObject:
   - component: {fileID: 1260153166}
   - component: {fileID: 1260153168}
   - component: {fileID: 1260153167}
+  - component: {fileID: 1260153169}
   m_Layer: 0
   m_Name: Sofa2 (9)
   m_TagString: Obstacle
@@ -17758,6 +19066,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1260153165}
   m_Mesh: {fileID: 4300048, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &1260153169
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1260153165}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.5703125, y: 2.3051126, z: 2.1759496}
+  m_Center: {x: -1.2387352, y: 1.1525565, z: -1.0873349}
 --- !u!1 &1260932755
 GameObject:
   m_ObjectHideFlags: 0
@@ -17768,6 +19088,7 @@ GameObject:
   - component: {fileID: 1260932756}
   - component: {fileID: 1260932758}
   - component: {fileID: 1260932757}
+  - component: {fileID: 1260932759}
   m_Layer: 0
   m_Name: Table1 (2)
   m_TagString: Obstacle
@@ -17831,6 +19152,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1260932755}
   m_Mesh: {fileID: 4300018, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &1260932759
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1260932755}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.5810623, y: 1.1256785, z: 2.581345}
+  m_Center: {x: -1.2537689, y: 0.56283957, z: -1.2906725}
 --- !u!1 &1263440108
 GameObject:
   m_ObjectHideFlags: 0
@@ -18073,6 +19406,7 @@ GameObject:
   - component: {fileID: 1283508137}
   - component: {fileID: 1283508139}
   - component: {fileID: 1283508138}
+  - component: {fileID: 1283508140}
   m_Layer: 0
   m_Name: Wall1 (7)
   m_TagString: Obstacle
@@ -18136,6 +19470,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1283508136}
   m_Mesh: {fileID: 4300014, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &1283508140
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1283508136}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10, y: 10, z: 0.6259622}
+  m_Center: {x: -5.000001, y: 5, z: -0.31298086}
 --- !u!1 &1287740138
 GameObject:
   m_ObjectHideFlags: 0
@@ -18146,6 +19492,7 @@ GameObject:
   - component: {fileID: 1287740139}
   - component: {fileID: 1287740141}
   - component: {fileID: 1287740140}
+  - component: {fileID: 1287740142}
   m_Layer: 0
   m_Name: Wall1
   m_TagString: Obstacle
@@ -18209,6 +19556,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1287740138}
   m_Mesh: {fileID: 4300014, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &1287740142
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1287740138}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10, y: 10, z: 0.6259622}
+  m_Center: {x: -5.000001, y: 5, z: -0.31298086}
 --- !u!1 &1288078907
 GameObject:
   m_ObjectHideFlags: 0
@@ -18287,6 +19646,7 @@ GameObject:
   - component: {fileID: 1288626511}
   - component: {fileID: 1288626513}
   - component: {fileID: 1288626512}
+  - component: {fileID: 1288626514}
   m_Layer: 0
   m_Name: Desk1 (2)
   m_TagString: Untagged
@@ -18350,6 +19710,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1288626510}
   m_Mesh: {fileID: 4300008, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &1288626514
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1288626510}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.000002, y: 2.2819233, z: 3.7666283}
+  m_Center: {x: 1.5896143, y: -1.1314917, z: -0.7439067}
 --- !u!1 &1291974411
 GameObject:
   m_ObjectHideFlags: 0
@@ -18433,6 +19805,7 @@ GameObject:
   - component: {fileID: 1297555818}
   - component: {fileID: 1297555820}
   - component: {fileID: 1297555819}
+  - component: {fileID: 1297555821}
   m_Layer: 0
   m_Name: Wall1 (8)
   m_TagString: Obstacle
@@ -18496,6 +19869,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1297555817}
   m_Mesh: {fileID: 4300014, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &1297555821
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1297555817}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10, y: 10, z: 0.6259622}
+  m_Center: {x: -5.000001, y: 5, z: -0.31298086}
 --- !u!1 &1298135357
 GameObject:
   m_ObjectHideFlags: 0
@@ -18506,6 +19891,7 @@ GameObject:
   - component: {fileID: 1298135358}
   - component: {fileID: 1298135360}
   - component: {fileID: 1298135359}
+  - component: {fileID: 1298135361}
   m_Layer: 0
   m_Name: Doors (6)
   m_TagString: Obstacle
@@ -18569,6 +19955,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1298135357}
   m_Mesh: {fileID: 4300022, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &1298135361
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1298135357}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.6582193, y: 6.0715556, z: 0.42747745}
+  m_Center: {x: 1.8291097, y: 2.9963028, z: 0.13373843}
 --- !u!1 &1304979463
 GameObject:
   m_ObjectHideFlags: 0
@@ -18880,6 +20278,7 @@ GameObject:
   - component: {fileID: 1325813603}
   - component: {fileID: 1325813605}
   - component: {fileID: 1325813604}
+  - component: {fileID: 1325813606}
   m_Layer: 0
   m_Name: Wall1 (12)
   m_TagString: Obstacle
@@ -18943,6 +20342,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1325813602}
   m_Mesh: {fileID: 4300052, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &1325813606
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1325813602}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.000002, y: 10, z: 0.6259624}
+  m_Center: {x: -4.999999, y: 5, z: -0.31298095}
 --- !u!1 &1327425630
 GameObject:
   m_ObjectHideFlags: 0
@@ -18953,6 +20364,7 @@ GameObject:
   - component: {fileID: 1327425631}
   - component: {fileID: 1327425633}
   - component: {fileID: 1327425632}
+  - component: {fileID: 1327425634}
   m_Layer: 0
   m_Name: Wall2 (18)
   m_TagString: Obstacle
@@ -18988,7 +20400,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 176ba9d2085a79b448cefcb3e07ea37e, type: 2}
+  - {fileID: 2100000, guid: 3a0ed3e21ab2e924c8fc4a03f9704948, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -19016,6 +20428,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1327425630}
   m_Mesh: {fileID: 4300012, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &1327425634
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1327425630}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.000002, y: 10, z: 0.6259624}
+  m_Center: {x: -5.000001, y: 5, z: -0.31298095}
 --- !u!1 &1331144314
 GameObject:
   m_ObjectHideFlags: 0
@@ -19172,6 +20596,7 @@ GameObject:
   - component: {fileID: 1335683252}
   - component: {fileID: 1335683254}
   - component: {fileID: 1335683253}
+  - component: {fileID: 1335683255}
   m_Layer: 0
   m_Name: Desk1 (6)
   m_TagString: Untagged
@@ -19235,6 +20660,23 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1335683251}
   m_Mesh: {fileID: 4300008, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &1335683255
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1335683251}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.000002, y: 2.2819233, z: 3.7666283}
+  m_Center: {x: 1.5896133, y: -1.1314917, z: -0.7439086}
+--- !u!4 &1336170427 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4070767825563858, guid: 4169c31376a01a148bee185ed46ddffc,
+    type: 2}
+  m_PrefabInternal: {fileID: 760071166}
 --- !u!1 &1339692821
 GameObject:
   m_ObjectHideFlags: 0
@@ -19318,6 +20760,7 @@ GameObject:
   - component: {fileID: 1342682087}
   - component: {fileID: 1342682089}
   - component: {fileID: 1342682088}
+  - component: {fileID: 1342682090}
   m_Layer: 0
   m_Name: Wall1 (2)
   m_TagString: Obstacle
@@ -19381,6 +20824,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1342682086}
   m_Mesh: {fileID: 4300014, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &1342682090
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1342682086}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10, y: 10, z: 0.6259622}
+  m_Center: {x: -5.000001, y: 5, z: -0.31298086}
 --- !u!1 &1345455163
 GameObject:
   m_ObjectHideFlags: 0
@@ -19391,6 +20846,7 @@ GameObject:
   - component: {fileID: 1345455164}
   - component: {fileID: 1345455166}
   - component: {fileID: 1345455165}
+  - component: {fileID: 1345455167}
   m_Layer: 0
   m_Name: Wall1 (17)
   m_TagString: Obstacle
@@ -19454,6 +20910,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1345455163}
   m_Mesh: {fileID: 4300014, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &1345455167
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1345455163}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10, y: 10, z: 0.6259622}
+  m_Center: {x: -5.000001, y: 5, z: -0.31298086}
 --- !u!1 &1348624210
 GameObject:
   m_ObjectHideFlags: 0
@@ -19735,6 +21203,7 @@ GameObject:
   - component: {fileID: 1368731347}
   - component: {fileID: 1368731349}
   - component: {fileID: 1368731348}
+  - component: {fileID: 1368731350}
   m_Layer: 0
   m_Name: Table2 (4)
   m_TagString: Obstacle
@@ -19798,6 +21267,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1368731346}
   m_Mesh: {fileID: 4300044, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &1368731350
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1368731346}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.5810623, y: 1.1256785, z: 2.581345}
+  m_Center: {x: -1.2537689, y: 0.5628396, z: -1.2906725}
 --- !u!1 &1370185139
 GameObject:
   m_ObjectHideFlags: 0
@@ -19881,6 +21362,7 @@ GameObject:
   - component: {fileID: 1379541469}
   - component: {fileID: 1379541471}
   - component: {fileID: 1379541470}
+  - component: {fileID: 1379541472}
   m_Layer: 0
   m_Name: Desk1 (7)
   m_TagString: Untagged
@@ -19944,6 +21426,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1379541468}
   m_Mesh: {fileID: 4300008, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &1379541472
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1379541468}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.000002, y: 2.2819233, z: 3.7666283}
+  m_Center: {x: 1.5896171, y: -1.1314917, z: -0.7439105}
 --- !u!1 &1382902195
 GameObject:
   m_ObjectHideFlags: 0
@@ -20474,6 +21968,7 @@ GameObject:
   - component: {fileID: 1413976373}
   - component: {fileID: 1413976375}
   - component: {fileID: 1413976374}
+  - component: {fileID: 1413976376}
   m_Layer: 0
   m_Name: Desk1 (4)
   m_TagString: Untagged
@@ -20537,6 +22032,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1413976372}
   m_Mesh: {fileID: 4300008, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &1413976376
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1413976372}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.000002, y: 2.2819233, z: 3.7666283}
+  m_Center: {x: 1.5896133, y: -1.1314917, z: -0.7439105}
 --- !u!1 &1420443672
 GameObject:
   m_ObjectHideFlags: 0
@@ -20547,6 +22054,7 @@ GameObject:
   - component: {fileID: 1420443673}
   - component: {fileID: 1420443675}
   - component: {fileID: 1420443674}
+  - component: {fileID: 1420443676}
   m_Layer: 0
   m_Name: Wall1 (20)
   m_TagString: Obstacle
@@ -20610,6 +22118,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1420443672}
   m_Mesh: {fileID: 4300014, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &1420443676
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1420443672}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10, y: 10, z: 0.6259622}
+  m_Center: {x: -5.000001, y: 5, z: -0.31298086}
 --- !u!1 &1425183845
 GameObject:
   m_ObjectHideFlags: 0
@@ -20620,6 +22140,7 @@ GameObject:
   - component: {fileID: 1425183846}
   - component: {fileID: 1425183848}
   - component: {fileID: 1425183847}
+  - component: {fileID: 1425183849}
   m_Layer: 0
   m_Name: Wall1 (18)
   m_TagString: Obstacle
@@ -20683,6 +22204,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1425183845}
   m_Mesh: {fileID: 4300014, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &1425183849
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1425183845}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10, y: 10, z: 0.6259622}
+  m_Center: {x: -5.000001, y: 5, z: -0.31298086}
 --- !u!1 &1427860057
 GameObject:
   m_ObjectHideFlags: 0
@@ -20766,6 +22299,7 @@ GameObject:
   - component: {fileID: 1435187364}
   - component: {fileID: 1435187366}
   - component: {fileID: 1435187365}
+  - component: {fileID: 1435187367}
   m_Layer: 0
   m_Name: Desk1 (3)
   m_TagString: Untagged
@@ -20829,6 +22363,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1435187363}
   m_Mesh: {fileID: 4300008, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &1435187367
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1435187363}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.000002, y: 2.2819233, z: 3.766629}
+  m_Center: {x: 1.5896133, y: -1.1314917, z: -0.7439135}
 --- !u!1 &1436836408
 GameObject:
   m_ObjectHideFlags: 0
@@ -20912,6 +22458,7 @@ GameObject:
   - component: {fileID: 1441263043}
   - component: {fileID: 1441263045}
   - component: {fileID: 1441263044}
+  - component: {fileID: 1441263046}
   m_Layer: 0
   m_Name: Wall2 (14)
   m_TagString: Obstacle
@@ -20975,6 +22522,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1441263042}
   m_Mesh: {fileID: 4300012, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &1441263046
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1441263042}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.000002, y: 10, z: 0.6259624}
+  m_Center: {x: -5.000001, y: 5, z: -0.31298476}
 --- !u!1 &1442449884
 GameObject:
   m_ObjectHideFlags: 0
@@ -21002,15 +22561,15 @@ Transform:
   m_PrefabParentObject: {fileID: 400010, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1442449884}
-  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 29.54, y: 2.68, z: 32.52}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -12.29, y: 2.68, z: 28.67}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 824423544}
   - {fileID: 784944778}
   m_Father: {fileID: 1560335149}
   m_RootOrder: 268
-  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!82 &1442449886
 AudioSource:
   m_ObjectHideFlags: 0
@@ -21399,6 +22958,7 @@ GameObject:
   - component: {fileID: 1444820134}
   - component: {fileID: 1444820136}
   - component: {fileID: 1444820135}
+  - component: {fileID: 1444820137}
   m_Layer: 0
   m_Name: Wall1 (15)
   m_TagString: Obstacle
@@ -21462,6 +23022,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1444820133}
   m_Mesh: {fileID: 4300052, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &1444820137
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1444820133}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10, y: 10, z: 0.6259622}
+  m_Center: {x: -5, y: 5, z: -0.31298086}
 --- !u!1 &1452835281
 GameObject:
   m_ObjectHideFlags: 0
@@ -21723,7 +23295,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1473467994}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 29.5, y: 2.68, z: -49.78}
+  m_LocalPosition: {x: 24.24, y: 2.68, z: -49.78}
   m_LocalScale: {x: 1.0000005, y: 1, z: 1.0000005}
   m_Children:
   - {fileID: 1091801909}
@@ -22049,6 +23621,7 @@ GameObject:
   - component: {fileID: 1479487078}
   - component: {fileID: 1479487080}
   - component: {fileID: 1479487079}
+  - component: {fileID: 1479487081}
   m_Layer: 0
   m_Name: Desk1 (6)
   m_TagString: Untagged
@@ -22112,6 +23685,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1479487077}
   m_Mesh: {fileID: 4300008, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &1479487081
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1479487077}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.000002, y: 2.2819233, z: 3.7666283}
+  m_Center: {x: 1.5896176, y: -1.1314917, z: -0.7439067}
 --- !u!1 &1483289217
 GameObject:
   m_ObjectHideFlags: 0
@@ -22122,6 +23707,7 @@ GameObject:
   - component: {fileID: 1483289218}
   - component: {fileID: 1483289220}
   - component: {fileID: 1483289219}
+  - component: {fileID: 1483289221}
   m_Layer: 0
   m_Name: Wall2 (13)
   m_TagString: Obstacle
@@ -22185,6 +23771,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1483289217}
   m_Mesh: {fileID: 4300012, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &1483289221
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1483289217}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.000002, y: 10, z: 0.6259624}
+  m_Center: {x: -4.999997, y: 5, z: -0.31298476}
 --- !u!1 &1487189754
 GameObject:
   m_ObjectHideFlags: 0
@@ -22195,6 +23793,7 @@ GameObject:
   - component: {fileID: 1487189755}
   - component: {fileID: 1487189757}
   - component: {fileID: 1487189756}
+  - component: {fileID: 1487189758}
   m_Layer: 0
   m_Name: Wall1 (27)
   m_TagString: Obstacle
@@ -22230,7 +23829,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 176ba9d2085a79b448cefcb3e07ea37e, type: 2}
+  - {fileID: 2100000, guid: 3a0ed3e21ab2e924c8fc4a03f9704948, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -22258,6 +23857,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1487189754}
   m_Mesh: {fileID: 4300014, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &1487189758
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1487189754}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.000002, y: 10, z: 0.6259624}
+  m_Center: {x: -5.0000024, y: 5, z: -0.3129819}
 --- !u!1 &1487579881
 GameObject:
   m_ObjectHideFlags: 0
@@ -22315,6 +23926,7 @@ GameObject:
   - component: {fileID: 1491058259}
   - component: {fileID: 1491058261}
   - component: {fileID: 1491058260}
+  - component: {fileID: 1491058262}
   m_Layer: 0
   m_Name: Wall1 (9)
   m_TagString: Obstacle
@@ -22378,6 +23990,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1491058258}
   m_Mesh: {fileID: 4300014, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &1491058262
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1491058258}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10, y: 10, z: 0.6259622}
+  m_Center: {x: -5.000001, y: 5, z: -0.31298086}
 --- !u!1 &1494653707
 GameObject:
   m_ObjectHideFlags: 0
@@ -22461,6 +24085,7 @@ GameObject:
   - component: {fileID: 1501339596}
   - component: {fileID: 1501339598}
   - component: {fileID: 1501339597}
+  - component: {fileID: 1501339599}
   m_Layer: 0
   m_Name: Wall2 (20)
   m_TagString: Obstacle
@@ -22524,6 +24149,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1501339595}
   m_Mesh: {fileID: 4300012, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &1501339599
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1501339595}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.000002, y: 10, z: 0.6259624}
+  m_Center: {x: -5.000001, y: 5, z: -0.3129794}
 --- !u!1 &1503205707
 GameObject:
   m_ObjectHideFlags: 0
@@ -22688,6 +24325,7 @@ GameObject:
   - component: {fileID: 1504268475}
   - component: {fileID: 1504268477}
   - component: {fileID: 1504268476}
+  - component: {fileID: 1504268478}
   m_Layer: 0
   m_Name: Wall1 (4)
   m_TagString: Obstacle
@@ -22751,6 +24389,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1504268474}
   m_Mesh: {fileID: 4300014, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &1504268478
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1504268474}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.000002, y: 10, z: 0.6259624}
+  m_Center: {x: -5.000001, y: 5, z: -0.31297904}
 --- !u!1 &1507293076
 GameObject:
   m_ObjectHideFlags: 0
@@ -22834,6 +24484,7 @@ GameObject:
   - component: {fileID: 1521201797}
   - component: {fileID: 1521201799}
   - component: {fileID: 1521201798}
+  - component: {fileID: 1521201800}
   m_Layer: 0
   m_Name: Desk1 (6)
   m_TagString: Untagged
@@ -22897,6 +24548,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1521201796}
   m_Mesh: {fileID: 4300008, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &1521201800
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1521201796}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.000002, y: 2.2819233, z: 3.7666283}
+  m_Center: {x: 1.5896086, y: -1.1314917, z: -0.7439143}
 --- !u!1 &1525459419
 GameObject:
   m_ObjectHideFlags: 0
@@ -22907,6 +24570,7 @@ GameObject:
   - component: {fileID: 1525459420}
   - component: {fileID: 1525459422}
   - component: {fileID: 1525459421}
+  - component: {fileID: 1525459423}
   m_Layer: 0
   m_Name: Desk1 (2)
   m_TagString: Untagged
@@ -22970,6 +24634,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1525459419}
   m_Mesh: {fileID: 4300008, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &1525459423
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1525459419}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.000005, y: 2.2819233, z: 3.7666292}
+  m_Center: {x: 1.5896137, y: -1.1314917, z: -0.7439122}
 --- !u!1 &1526866800
 GameObject:
   m_ObjectHideFlags: 0
@@ -22980,6 +24656,7 @@ GameObject:
   - component: {fileID: 1526866801}
   - component: {fileID: 1526866803}
   - component: {fileID: 1526866802}
+  - component: {fileID: 1526866804}
   m_Layer: 0
   m_Name: Sofa2 (7)
   m_TagString: Obstacle
@@ -23043,6 +24720,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1526866800}
   m_Mesh: {fileID: 4300048, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &1526866804
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1526866800}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.5703125, y: 2.3051126, z: 2.1759496}
+  m_Center: {x: -1.2387352, y: 1.1525565, z: -1.0873349}
 --- !u!1 &1528084555
 GameObject:
   m_ObjectHideFlags: 0
@@ -23272,6 +24961,7 @@ GameObject:
   - component: {fileID: 1538509318}
   - component: {fileID: 1538509320}
   - component: {fileID: 1538509319}
+  - component: {fileID: 1538509321}
   m_Layer: 0
   m_Name: Sofa1 (4)
   m_TagString: Obstacle
@@ -23335,6 +25025,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1538509317}
   m_Mesh: {fileID: 4300016, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &1538509321
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1538509317}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.5703123, y: 2.3051126, z: 2.1759493}
+  m_Center: {x: -1.2387332, y: 1.1525564, z: -1.0873348}
 --- !u!1 &1556461415
 GameObject:
   m_ObjectHideFlags: 0
@@ -23345,6 +25047,7 @@ GameObject:
   - component: {fileID: 1556461416}
   - component: {fileID: 1556461418}
   - component: {fileID: 1556461417}
+  - component: {fileID: 1556461419}
   m_Layer: 0
   m_Name: Table2 (5)
   m_TagString: Obstacle
@@ -23408,6 +25111,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1556461415}
   m_Mesh: {fileID: 4300044, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &1556461419
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1556461415}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.581062, y: 1.1256785, z: 2.5813448}
+  m_Center: {x: -1.2537707, y: 0.5628394, z: -1.2906724}
 --- !u!1 &1558354703
 GameObject:
   m_ObjectHideFlags: 0
@@ -23862,6 +25577,7 @@ GameObject:
   - component: {fileID: 1575550441}
   - component: {fileID: 1575550443}
   - component: {fileID: 1575550442}
+  - component: {fileID: 1575550444}
   m_Layer: 0
   m_Name: Wall2 (19)
   m_TagString: Obstacle
@@ -23925,6 +25641,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1575550440}
   m_Mesh: {fileID: 4300012, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &1575550444
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1575550440}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10, y: 10, z: 0.6259622}
+  m_Center: {x: -5, y: 5, z: -0.31298086}
 --- !u!1 &1583142857
 GameObject:
   m_ObjectHideFlags: 0
@@ -24013,6 +25741,7 @@ GameObject:
   - component: {fileID: 1598866101}
   - component: {fileID: 1598866103}
   - component: {fileID: 1598866102}
+  - component: {fileID: 1598866104}
   m_Layer: 0
   m_Name: Desk1 (4)
   m_TagString: Untagged
@@ -24076,6 +25805,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1598866100}
   m_Mesh: {fileID: 4300008, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &1598866104
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1598866100}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.000002, y: 2.2819233, z: 3.7666283}
+  m_Center: {x: 1.5896095, y: -1.1314917, z: -0.7439105}
 --- !u!1 &1599564776
 GameObject:
   m_ObjectHideFlags: 0
@@ -24159,6 +25900,7 @@ GameObject:
   - component: {fileID: 1606597979}
   - component: {fileID: 1606597981}
   - component: {fileID: 1606597980}
+  - component: {fileID: 1606597982}
   m_Layer: 0
   m_Name: Desk1 (8)
   m_TagString: Obstacle
@@ -24222,6 +25964,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1606597978}
   m_Mesh: {fileID: 4300008, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &1606597982
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1606597978}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.000002, y: 2.2819233, z: 3.7666283}
+  m_Center: {x: 1.5896133, y: -1.1314917, z: -0.74391335}
 --- !u!1 &1609593909
 GameObject:
   m_ObjectHideFlags: 0
@@ -24305,6 +26059,7 @@ GameObject:
   - component: {fileID: 1610755494}
   - component: {fileID: 1610755496}
   - component: {fileID: 1610755495}
+  - component: {fileID: 1610755497}
   m_Layer: 0
   m_Name: Wall1 (24)
   m_TagString: Obstacle
@@ -24340,7 +26095,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 176ba9d2085a79b448cefcb3e07ea37e, type: 2}
+  - {fileID: 2100000, guid: 3a0ed3e21ab2e924c8fc4a03f9704948, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -24368,6 +26123,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1610755493}
   m_Mesh: {fileID: 4300014, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &1610755497
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1610755493}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.000002, y: 10, z: 0.6259624}
+  m_Center: {x: -5.0000024, y: 5, z: -0.3129781}
 --- !u!1 &1612106858
 GameObject:
   m_ObjectHideFlags: 0
@@ -24597,6 +26364,7 @@ GameObject:
   - component: {fileID: 1642050482}
   - component: {fileID: 1642050484}
   - component: {fileID: 1642050483}
+  - component: {fileID: 1642050485}
   m_Layer: 0
   m_Name: Sofa1 (1)
   m_TagString: Obstacle
@@ -24660,6 +26428,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1642050481}
   m_Mesh: {fileID: 4300016, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &1642050485
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1642050481}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.5703125, y: 2.3051126, z: 2.1759496}
+  m_Center: {x: -1.2387352, y: 1.1525565, z: -1.0873349}
 --- !u!1 &1650286171
 GameObject:
   m_ObjectHideFlags: 0
@@ -24743,6 +26523,7 @@ GameObject:
   - component: {fileID: 1651626017}
   - component: {fileID: 1651626019}
   - component: {fileID: 1651626018}
+  - component: {fileID: 1651626020}
   m_Layer: 0
   m_Name: Sofa2 (6)
   m_TagString: Obstacle
@@ -24806,6 +26587,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1651626016}
   m_Mesh: {fileID: 4300048, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &1651626020
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1651626016}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.5703125, y: 2.3051126, z: 2.1759496}
+  m_Center: {x: -1.2387352, y: 1.1525565, z: -1.0873349}
 --- !u!1 &1652775777
 GameObject:
   m_ObjectHideFlags: 0
@@ -24889,6 +26682,7 @@ GameObject:
   - component: {fileID: 1653884016}
   - component: {fileID: 1653884018}
   - component: {fileID: 1653884017}
+  - component: {fileID: 1653884019}
   m_Layer: 0
   m_Name: Desk1 (2)
   m_TagString: Untagged
@@ -24952,6 +26746,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1653884015}
   m_Mesh: {fileID: 4300008, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &1653884019
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1653884015}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.000002, y: 2.2819233, z: 3.7666283}
+  m_Center: {x: 1.5896143, y: -1.1314917, z: -0.7439067}
 --- !u!1 &1662288841
 GameObject:
   m_ObjectHideFlags: 0
@@ -25181,6 +26987,7 @@ GameObject:
   - component: {fileID: 1679728279}
   - component: {fileID: 1679728281}
   - component: {fileID: 1679728280}
+  - component: {fileID: 1679728282}
   m_Layer: 0
   m_Name: Object016 (4)
   m_TagString: Untagged
@@ -25244,6 +27051,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1679728278}
   m_Mesh: {fileID: 4300026, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &1679728282
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1679728278}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.057246, y: 4.549305, z: 1.5470015}
+  m_Center: {x: -5.028623, y: 2.2746515, z: 0.77350146}
 --- !u!1 &1688019640
 GameObject:
   m_ObjectHideFlags: 0
@@ -25254,6 +27073,7 @@ GameObject:
   - component: {fileID: 1688019641}
   - component: {fileID: 1688019643}
   - component: {fileID: 1688019642}
+  - component: {fileID: 1688019644}
   m_Layer: 0
   m_Name: Desk1 (7)
   m_TagString: Untagged
@@ -25317,6 +27137,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1688019640}
   m_Mesh: {fileID: 4300008, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &1688019644
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1688019640}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.000002, y: 2.2819233, z: 3.7666283}
+  m_Center: {x: 1.5896114, y: -1.1314917, z: -0.7439067}
 --- !u!1 &1688761202
 GameObject:
   m_ObjectHideFlags: 0
@@ -25327,6 +27159,7 @@ GameObject:
   - component: {fileID: 1688761203}
   - component: {fileID: 1688761205}
   - component: {fileID: 1688761204}
+  - component: {fileID: 1688761206}
   m_Layer: 0
   m_Name: Desk1 (4)
   m_TagString: Untagged
@@ -25390,6 +27223,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1688761202}
   m_Mesh: {fileID: 4300008, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &1688761206
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1688761202}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.000002, y: 2.2819233, z: 3.7666283}
+  m_Center: {x: 1.5896167, y: -1.1314917, z: -0.74390954}
 --- !u!1 &1690566958
 GameObject:
   m_ObjectHideFlags: 0
@@ -25692,6 +27537,7 @@ GameObject:
   - component: {fileID: 1704436353}
   - component: {fileID: 1704436355}
   - component: {fileID: 1704436354}
+  - component: {fileID: 1704436356}
   m_Layer: 0
   m_Name: Desk1
   m_TagString: Untagged
@@ -25755,6 +27601,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1704436352}
   m_Mesh: {fileID: 4300008, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &1704436356
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1704436352}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.000002, y: 2.2819233, z: 3.7666283}
+  m_Center: {x: 1.5896057, y: -1.1314917, z: -0.7439105}
 --- !u!1 &1704962610
 GameObject:
   m_ObjectHideFlags: 0
@@ -26130,6 +27988,7 @@ GameObject:
   - component: {fileID: 1740598044}
   - component: {fileID: 1740598046}
   - component: {fileID: 1740598045}
+  - component: {fileID: 1740598047}
   m_Layer: 0
   m_Name: Desk3
   m_TagString: Obstacle
@@ -26193,6 +28052,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1740598043}
   m_Mesh: {fileID: 4300042, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &1740598047
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1740598043}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.000002, y: 2.2819233, z: 3.7666283}
+  m_Center: {x: 1.5896124, y: -1.1314917, z: -0.7439105}
 --- !u!1 &1741229512
 GameObject:
   m_ObjectHideFlags: 0
@@ -26203,6 +28074,7 @@ GameObject:
   - component: {fileID: 1741229513}
   - component: {fileID: 1741229515}
   - component: {fileID: 1741229514}
+  - component: {fileID: 1741229516}
   m_Layer: 0
   m_Name: Desk2 (6)
   m_TagString: Obstacle
@@ -26266,6 +28138,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1741229512}
   m_Mesh: {fileID: 4300034, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &1741229516
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1741229512}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10, y: 2.2819233, z: 3.7666273}
+  m_Center: {x: 1.5896168, y: -1.1314917, z: -0.7439103}
 --- !u!1 &1743753048
 GameObject:
   m_ObjectHideFlags: 0
@@ -26562,6 +28446,7 @@ GameObject:
   - component: {fileID: 1758166097}
   - component: {fileID: 1758166099}
   - component: {fileID: 1758166098}
+  - component: {fileID: 1758166100}
   m_Layer: 0
   m_Name: Desk1
   m_TagString: Untagged
@@ -26625,6 +28510,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1758166096}
   m_Mesh: {fileID: 4300008, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &1758166100
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1758166096}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.000002, y: 2.2819233, z: 3.7666283}
+  m_Center: {x: 1.5896133, y: -1.1314917, z: -0.7439086}
 --- !u!1 &1762828243
 GameObject:
   m_ObjectHideFlags: 0
@@ -26854,6 +28751,7 @@ GameObject:
   - component: {fileID: 1777148193}
   - component: {fileID: 1777148195}
   - component: {fileID: 1777148194}
+  - component: {fileID: 1777148196}
   m_Layer: 0
   m_Name: Desk1 (5)
   m_TagString: Untagged
@@ -26917,6 +28815,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1777148192}
   m_Mesh: {fileID: 4300008, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &1777148196
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1777148192}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.000002, y: 2.2819233, z: 3.7666283}
+  m_Center: {x: 1.5896105, y: -1.1314917, z: -0.7439105}
 --- !u!1 &1778350287
 GameObject:
   m_ObjectHideFlags: 0
@@ -26927,6 +28837,7 @@ GameObject:
   - component: {fileID: 1778350288}
   - component: {fileID: 1778350290}
   - component: {fileID: 1778350289}
+  - component: {fileID: 1778350291}
   m_Layer: 0
   m_Name: Object016
   m_TagString: Untagged
@@ -26990,6 +28901,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1778350287}
   m_Mesh: {fileID: 4300026, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &1778350291
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1778350287}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.057246, y: 4.549305, z: 1.5470015}
+  m_Center: {x: -5.028621, y: 2.2746515, z: 0.77349764}
 --- !u!1 &1786353152
 GameObject:
   m_ObjectHideFlags: 0
@@ -27551,6 +29474,7 @@ GameObject:
   - component: {fileID: 1835173748}
   - component: {fileID: 1835173750}
   - component: {fileID: 1835173749}
+  - component: {fileID: 1835173751}
   m_Layer: 0
   m_Name: Desk1 (1)
   m_TagString: Obstacle
@@ -27614,6 +29538,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1835173747}
   m_Mesh: {fileID: 4300008, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &1835173751
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1835173747}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.000002, y: 2.2819233, z: 3.7666283}
+  m_Center: {x: 1.5896133, y: -1.1314917, z: -0.74390906}
 --- !u!1 &1840489140
 GameObject:
   m_ObjectHideFlags: 0
@@ -27697,6 +29633,7 @@ GameObject:
   - component: {fileID: 1841097484}
   - component: {fileID: 1841097486}
   - component: {fileID: 1841097485}
+  - component: {fileID: 1841097487}
   m_Layer: 0
   m_Name: Desk2 (12)
   m_TagString: Obstacle
@@ -27760,6 +29697,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1841097483}
   m_Mesh: {fileID: 4300034, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &1841097487
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1841097483}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10, y: 2.2819233, z: 3.7666273}
+  m_Center: {x: 1.589613, y: -1.1314917, z: -0.7439103}
 --- !u!1 &1842259391
 GameObject:
   m_ObjectHideFlags: 0
@@ -27770,6 +29719,7 @@ GameObject:
   - component: {fileID: 1842259392}
   - component: {fileID: 1842259394}
   - component: {fileID: 1842259393}
+  - component: {fileID: 1842259395}
   m_Layer: 0
   m_Name: Desk2 (1)
   m_TagString: Obstacle
@@ -27833,6 +29783,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1842259391}
   m_Mesh: {fileID: 4300034, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &1842259395
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1842259391}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10, y: 2.2819233, z: 3.7666273}
+  m_Center: {x: 1.5896168, y: -1.1314917, z: -0.7439103}
 --- !u!1 &1851781364 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1579378567273270, guid: 5cf9a509ec61dad44afca0e54d9d114f,
@@ -28033,6 +29995,7 @@ GameObject:
   - component: {fileID: 1860357734}
   - component: {fileID: 1860357736}
   - component: {fileID: 1860357735}
+  - component: {fileID: 1860357737}
   m_Layer: 0
   m_Name: Desk1 (5)
   m_TagString: Obstacle
@@ -28096,6 +30059,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1860357733}
   m_Mesh: {fileID: 4300008, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &1860357737
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1860357733}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.000002, y: 2.2819233, z: 3.7666283}
+  m_Center: {x: 1.5896119, y: -1.1314917, z: -0.7439067}
 --- !u!1 &1866070454
 GameObject:
   m_ObjectHideFlags: 0
@@ -28386,6 +30361,7 @@ GameObject:
   - component: {fileID: 1879848534}
   - component: {fileID: 1879848536}
   - component: {fileID: 1879848535}
+  - component: {fileID: 1879848537}
   m_Layer: 0
   m_Name: Desk1 (10)
   m_TagString: Obstacle
@@ -28449,6 +30425,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1879848533}
   m_Mesh: {fileID: 4300008, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &1879848537
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1879848533}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.000002, y: 2.2819233, z: 3.7666283}
+  m_Center: {x: 1.5896162, y: -1.1314917, z: -0.74391097}
 --- !u!1 &1881140853
 GameObject:
   m_ObjectHideFlags: 0
@@ -28615,6 +30603,7 @@ GameObject:
   - component: {fileID: 1891876457}
   - component: {fileID: 1891876459}
   - component: {fileID: 1891876458}
+  - component: {fileID: 1891876460}
   m_Layer: 0
   m_Name: Desk1
   m_TagString: Untagged
@@ -28678,6 +30667,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1891876456}
   m_Mesh: {fileID: 4300008, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &1891876460
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1891876456}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.000005, y: 2.2819233, z: 3.7666292}
+  m_Center: {x: 1.5896137, y: -1.1314917, z: -0.74391073}
 --- !u!1 &1902917116
 GameObject:
   m_ObjectHideFlags: 0
@@ -29078,6 +31079,7 @@ GameObject:
   - component: {fileID: 1923199751}
   - component: {fileID: 1923199753}
   - component: {fileID: 1923199752}
+  - component: {fileID: 1923199754}
   m_Layer: 0
   m_Name: Doors (7)
   m_TagString: Obstacle
@@ -29141,6 +31143,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1923199750}
   m_Mesh: {fileID: 4300022, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &1923199754
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1923199750}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.6582184, y: 6.0715556, z: 0.42747736}
+  m_Center: {x: 1.8291092, y: 2.9963028, z: 0.1337384}
 --- !u!1 &1925061113
 GameObject:
   m_ObjectHideFlags: 0
@@ -29219,6 +31233,7 @@ GameObject:
   - component: {fileID: 1925472176}
   - component: {fileID: 1925472178}
   - component: {fileID: 1925472177}
+  - component: {fileID: 1925472179}
   m_Layer: 0
   m_Name: Object016 (3)
   m_TagString: Untagged
@@ -29282,6 +31297,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1925472175}
   m_Mesh: {fileID: 4300026, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &1925472179
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1925472175}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.057246, y: 4.549305, z: 1.5470015}
+  m_Center: {x: -5.028623, y: 2.2746515, z: 0.77350146}
 --- !u!1 &1925825322
 GameObject:
   m_ObjectHideFlags: 0
@@ -29292,6 +31319,7 @@ GameObject:
   - component: {fileID: 1925825323}
   - component: {fileID: 1925825325}
   - component: {fileID: 1925825324}
+  - component: {fileID: 1925825326}
   m_Layer: 0
   m_Name: Wall2 (9)
   m_TagString: Obstacle
@@ -29327,7 +31355,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 176ba9d2085a79b448cefcb3e07ea37e, type: 2}
+  - {fileID: 2100000, guid: 3a0ed3e21ab2e924c8fc4a03f9704948, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -29355,6 +31383,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1925825322}
   m_Mesh: {fileID: 4300012, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &1925825326
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1925825322}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10, y: 10, z: 0.6259622}
+  m_Center: {x: -5, y: 5, z: -0.31298086}
 --- !u!1 &1928888537
 GameObject:
   m_ObjectHideFlags: 0
@@ -29772,6 +31812,7 @@ GameObject:
   - component: {fileID: 1945306037}
   - component: {fileID: 1945306039}
   - component: {fileID: 1945306038}
+  - component: {fileID: 1945306040}
   m_Layer: 0
   m_Name: Doors (8)
   m_TagString: Obstacle
@@ -29835,6 +31876,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1945306036}
   m_Mesh: {fileID: 4300022, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &1945306040
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1945306036}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.6582184, y: 6.0715556, z: 0.42747736}
+  m_Center: {x: 1.8291092, y: 2.9963028, z: 0.1337384}
 --- !u!1 &1945799455
 GameObject:
   m_ObjectHideFlags: 0
@@ -29918,6 +31971,7 @@ GameObject:
   - component: {fileID: 1945922116}
   - component: {fileID: 1945922118}
   - component: {fileID: 1945922117}
+  - component: {fileID: 1945922119}
   m_Layer: 0
   m_Name: Sofa3 (3)
   m_TagString: Obstacle
@@ -29981,6 +32035,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1945922115}
   m_Mesh: {fileID: 4300050, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &1945922119
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1945922115}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.5703125, y: 2.3051126, z: 2.1759496}
+  m_Center: {x: -1.2387352, y: 1.1525565, z: -1.0873349}
 --- !u!1 &1946719987
 GameObject:
   m_ObjectHideFlags: 0
@@ -30137,6 +32203,7 @@ GameObject:
   - component: {fileID: 1955823595}
   - component: {fileID: 1955823597}
   - component: {fileID: 1955823596}
+  - component: {fileID: 1955823598}
   m_Layer: 0
   m_Name: Table3 (1)
   m_TagString: Obstacle
@@ -30200,6 +32267,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1955823594}
   m_Mesh: {fileID: 4300046, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &1955823598
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1955823594}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.5810623, y: 1.1256785, z: 2.581345}
+  m_Center: {x: -1.2537689, y: 0.5628396, z: -1.2906725}
 --- !u!1 &1958236051
 GameObject:
   m_ObjectHideFlags: 0
@@ -30210,6 +32289,7 @@ GameObject:
   - component: {fileID: 1958236052}
   - component: {fileID: 1958236054}
   - component: {fileID: 1958236053}
+  - component: {fileID: 1958236055}
   m_Layer: 0
   m_Name: Doors (1)
   m_TagString: Obstacle
@@ -30273,6 +32353,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1958236051}
   m_Mesh: {fileID: 4300022, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &1958236055
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1958236051}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.6582193, y: 6.0715556, z: 0.42747745}
+  m_Center: {x: 1.8291097, y: 2.9963028, z: 0.13373461}
 --- !u!1 &1959219530
 GameObject:
   m_ObjectHideFlags: 0
@@ -30283,6 +32375,8 @@ GameObject:
   - component: {fileID: 1959219531}
   - component: {fileID: 1959219533}
   - component: {fileID: 1959219532}
+  - component: {fileID: 1959219534}
+  - component: {fileID: 1959219535}
   m_Layer: 0
   m_Name: Wall2 (11)
   m_TagString: Obstacle
@@ -30318,7 +32412,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 176ba9d2085a79b448cefcb3e07ea37e, type: 2}
+  - {fileID: 2100000, guid: 3a0ed3e21ab2e924c8fc4a03f9704948, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -30346,6 +32440,30 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1959219530}
   m_Mesh: {fileID: 4300012, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &1959219534
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1959219530}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.000002, y: 10, z: 0.6259624}
+  m_Center: {x: -5, y: 5, z: -0.3129819}
+--- !u!65 &1959219535
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1959219530}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.000002, y: 10, z: 0.6259624}
+  m_Center: {x: -5, y: 5, z: -0.3129819}
 --- !u!1 &1962827475
 GameObject:
   m_ObjectHideFlags: 0
@@ -30502,6 +32620,7 @@ GameObject:
   - component: {fileID: 1976768181}
   - component: {fileID: 1976768183}
   - component: {fileID: 1976768182}
+  - component: {fileID: 1976768184}
   m_Layer: 0
   m_Name: Desk1 (6)
   m_TagString: Untagged
@@ -30565,6 +32684,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1976768180}
   m_Mesh: {fileID: 4300008, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &1976768184
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1976768180}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.000002, y: 2.2819233, z: 3.7666283}
+  m_Center: {x: 1.5896176, y: -1.1314917, z: -0.7439067}
 --- !u!1 &1983042892
 GameObject:
   m_ObjectHideFlags: 0
@@ -30721,6 +32852,7 @@ GameObject:
   - component: {fileID: 1990203613}
   - component: {fileID: 1990203615}
   - component: {fileID: 1990203614}
+  - component: {fileID: 1990203616}
   m_Layer: 0
   m_Name: Wall1 (1)
   m_TagString: Obstacle
@@ -30784,6 +32916,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1990203612}
   m_Mesh: {fileID: 4300014, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &1990203616
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1990203612}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10, y: 10, z: 0.6259622}
+  m_Center: {x: -5.000001, y: 5, z: -0.31298086}
 --- !u!1 &1993948279
 GameObject:
   m_ObjectHideFlags: 0
@@ -31013,6 +33157,7 @@ GameObject:
   - component: {fileID: 2006986193}
   - component: {fileID: 2006986195}
   - component: {fileID: 2006986194}
+  - component: {fileID: 2006986196}
   m_Layer: 0
   m_Name: Desk1
   m_TagString: Untagged
@@ -31076,6 +33221,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2006986192}
   m_Mesh: {fileID: 4300008, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &2006986196
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2006986192}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.000002, y: 2.2819233, z: 3.7666283}
+  m_Center: {x: 1.5896095, y: -1.1314917, z: -0.7439181}
 --- !u!1 &2012494707
 GameObject:
   m_ObjectHideFlags: 0
@@ -31086,6 +33243,7 @@ GameObject:
   - component: {fileID: 2012494708}
   - component: {fileID: 2012494710}
   - component: {fileID: 2012494709}
+  - component: {fileID: 2012494711}
   m_Layer: 0
   m_Name: Desk1 (6)
   m_TagString: Untagged
@@ -31149,6 +33307,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2012494707}
   m_Mesh: {fileID: 4300008, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &2012494711
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2012494707}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.000002, y: 2.2819233, z: 3.7666283}
+  m_Center: {x: 1.5896176, y: -1.1314917, z: -0.7439067}
 --- !u!1 &2014831272
 GameObject:
   m_ObjectHideFlags: 0
@@ -31159,6 +33329,7 @@ GameObject:
   - component: {fileID: 2014831273}
   - component: {fileID: 2014831275}
   - component: {fileID: 2014831274}
+  - component: {fileID: 2014831276}
   m_Layer: 0
   m_Name: Desk1 (6)
   m_TagString: Untagged
@@ -31222,6 +33393,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2014831272}
   m_Mesh: {fileID: 4300008, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &2014831276
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2014831272}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.000002, y: 2.2819233, z: 3.7666283}
+  m_Center: {x: 1.5896095, y: -1.1314917, z: -0.7439105}
 --- !u!1 &2016084109
 GameObject:
   m_ObjectHideFlags: 0
@@ -31232,6 +33415,7 @@ GameObject:
   - component: {fileID: 2016084110}
   - component: {fileID: 2016084112}
   - component: {fileID: 2016084111}
+  - component: {fileID: 2016084113}
   m_Layer: 0
   m_Name: Desk1 (11)
   m_TagString: Obstacle
@@ -31295,6 +33479,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2016084109}
   m_Mesh: {fileID: 4300008, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &2016084113
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2016084109}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.000002, y: 2.2819233, z: 3.7666283}
+  m_Center: {x: 1.5896162, y: -1.1314917, z: -0.7439119}
 --- !u!1 &2031514506
 GameObject:
   m_ObjectHideFlags: 0
@@ -31305,6 +33501,7 @@ GameObject:
   - component: {fileID: 2031514507}
   - component: {fileID: 2031514509}
   - component: {fileID: 2031514508}
+  - component: {fileID: 2031514510}
   m_Layer: 0
   m_Name: Sofa3
   m_TagString: Obstacle
@@ -31368,6 +33565,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2031514506}
   m_Mesh: {fileID: 4300050, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &2031514510
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2031514506}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.5703125, y: 2.3051126, z: 2.1759496}
+  m_Center: {x: -1.2387352, y: 1.1525567, z: -1.0873349}
 --- !u!1 &2036001627
 GameObject:
   m_ObjectHideFlags: 0
@@ -31378,6 +33587,7 @@ GameObject:
   - component: {fileID: 2036001628}
   - component: {fileID: 2036001630}
   - component: {fileID: 2036001629}
+  - component: {fileID: 2036001631}
   m_Layer: 0
   m_Name: Desk1 (2)
   m_TagString: Untagged
@@ -31441,6 +33651,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2036001627}
   m_Mesh: {fileID: 4300008, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &2036001631
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2036001627}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.000002, y: 2.2819233, z: 3.7666283}
+  m_Center: {x: 1.5896124, y: -1.1314917, z: -0.7439086}
 --- !u!1 &2038769838
 GameObject:
   m_ObjectHideFlags: 0
@@ -31451,6 +33673,7 @@ GameObject:
   - component: {fileID: 2038769839}
   - component: {fileID: 2038769841}
   - component: {fileID: 2038769840}
+  - component: {fileID: 2038769842}
   m_Layer: 0
   m_Name: TV3
   m_TagString: Untagged
@@ -31514,6 +33737,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2038769838}
   m_Mesh: {fileID: 4300006, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &2038769842
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2038769838}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.059984, y: 2.4473372, z: 0.9772183}
+  m_Center: {x: 0, y: 0.00000035762787, z: -0.00000023841855}
 --- !u!1 &2043957528
 GameObject:
   m_ObjectHideFlags: 0
@@ -31749,6 +33984,7 @@ GameObject:
   - component: {fileID: 2069579918}
   - component: {fileID: 2069579920}
   - component: {fileID: 2069579919}
+  - component: {fileID: 2069579921}
   m_Layer: 0
   m_Name: Wall1
   m_TagString: Obstacle
@@ -31812,6 +34048,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2069579917}
   m_Mesh: {fileID: 4300052, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &2069579921
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2069579917}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.000002, y: 10, z: 0.6259624}
+  m_Center: {x: -5.000003, y: 5, z: -0.31298095}
 --- !u!1 &2075887290
 GameObject:
   m_ObjectHideFlags: 0
@@ -32054,6 +34302,7 @@ GameObject:
   - component: {fileID: 2085221354}
   - component: {fileID: 2085221356}
   - component: {fileID: 2085221355}
+  - component: {fileID: 2085221357}
   m_Layer: 0
   m_Name: Desk1 (2)
   m_TagString: Untagged
@@ -32117,6 +34366,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2085221353}
   m_Mesh: {fileID: 4300008, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &2085221357
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2085221353}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.000002, y: 2.2819233, z: 3.7666283}
+  m_Center: {x: 1.5896124, y: -1.1314917, z: -0.7439143}
 --- !u!1 &2086722558
 GameObject:
   m_ObjectHideFlags: 0
@@ -32273,6 +34534,7 @@ GameObject:
   - component: {fileID: 2091859306}
   - component: {fileID: 2091859308}
   - component: {fileID: 2091859307}
+  - component: {fileID: 2091859309}
   m_Layer: 0
   m_Name: Table2 (1)
   m_TagString: Obstacle
@@ -32336,6 +34598,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2091859305}
   m_Mesh: {fileID: 4300044, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &2091859309
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2091859305}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.581062, y: 1.1256785, z: 2.5813448}
+  m_Center: {x: -1.2537688, y: 0.56283945, z: -1.2906686}
 --- !u!1 &2092084782
 GameObject:
   m_ObjectHideFlags: 0
@@ -32419,6 +34693,7 @@ GameObject:
   - component: {fileID: 2099629803}
   - component: {fileID: 2099629805}
   - component: {fileID: 2099629804}
+  - component: {fileID: 2099629806}
   m_Layer: 0
   m_Name: Wall1 (13)
   m_TagString: Obstacle
@@ -32482,6 +34757,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2099629802}
   m_Mesh: {fileID: 4300052, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &2099629806
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2099629802}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10, y: 10, z: 0.6259622}
+  m_Center: {x: -5, y: 5, z: -0.31298086}
 --- !u!1 &2100626497
 GameObject:
   m_ObjectHideFlags: 0
@@ -32492,6 +34779,7 @@ GameObject:
   - component: {fileID: 2100626498}
   - component: {fileID: 2100626500}
   - component: {fileID: 2100626499}
+  - component: {fileID: 2100626501}
   m_Layer: 0
   m_Name: Doors (3)
   m_TagString: Obstacle
@@ -32555,6 +34843,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2100626497}
   m_Mesh: {fileID: 4300022, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &2100626501
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2100626497}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.6582189, y: 6.0715556, z: 0.42747742}
+  m_Center: {x: 1.8291247, y: 2.9963028, z: 0.13374223}
 --- !u!1 &2103176494
 GameObject:
   m_ObjectHideFlags: 0
@@ -32711,6 +35011,7 @@ GameObject:
   - component: {fileID: 2118154999}
   - component: {fileID: 2118155001}
   - component: {fileID: 2118155000}
+  - component: {fileID: 2118155002}
   m_Layer: 0
   m_Name: Desk1 (4)
   m_TagString: Untagged
@@ -32774,6 +35075,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2118154998}
   m_Mesh: {fileID: 4300008, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &2118155002
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2118154998}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.000002, y: 2.2819233, z: 3.7666283}
+  m_Center: {x: 1.5896152, y: -1.1314917, z: -0.7439086}
 --- !u!1 &2134478920
 GameObject:
   m_ObjectHideFlags: 0
@@ -32784,6 +35097,7 @@ GameObject:
   - component: {fileID: 2134478921}
   - component: {fileID: 2134478923}
   - component: {fileID: 2134478922}
+  - component: {fileID: 2134478924}
   m_Layer: 0
   m_Name: TV1
   m_TagString: Untagged
@@ -32847,6 +35161,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2134478920}
   m_Mesh: {fileID: 4300040, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &2134478924
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2134478920}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.0599847, y: 2.4473374, z: 0.9772184}
+  m_Center: {x: -0.0000009536744, y: 0.00000011920929, z: -0.0000011920929}
 --- !u!1 &2135810375
 GameObject:
   m_ObjectHideFlags: 0
@@ -32857,6 +35183,7 @@ GameObject:
   - component: {fileID: 2135810376}
   - component: {fileID: 2135810378}
   - component: {fileID: 2135810377}
+  - component: {fileID: 2135810379}
   m_Layer: 0
   m_Name: Desk1 (7)
   m_TagString: Obstacle
@@ -32920,6 +35247,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2135810375}
   m_Mesh: {fileID: 4300008, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!65 &2135810379
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2135810375}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.000002, y: 2.2819233, z: 3.7666283}
+  m_Center: {x: 1.5896133, y: -1.1314917, z: -0.74390715}
 --- !u!1 &2138957164
 GameObject:
   m_ObjectHideFlags: 0
@@ -33109,3 +35448,112 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2140794084}
   m_Mesh: {fileID: 4300054, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!1 &2143259053
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 2143259055}
+  - component: {fileID: 2143259054}
+  m_Layer: 0
+  m_Name: SoundManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &2143259054
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2143259053}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: f4b4223ba1c492a49ad45328e2789abe, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 167
+  DopplerLevel: 1
+  MinDistance: 83.03924
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+--- !u!4 &2143259055
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2143259053}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -23, y: 5.28, z: 21.2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 24
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
