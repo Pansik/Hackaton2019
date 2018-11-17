@@ -31,7 +31,6 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-        Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * 10, Color.black);
         hpImage.fillAmount = Mathf.Lerp(hpImage.fillAmount, currentHp / maxHp, 0.5f);
         if (currentHp < maxHp * 0.5f)
         {
