@@ -11,6 +11,8 @@ public class LevelController : MonoBehaviour
     [Tooltip("Attach map prefab to be loaded")]
     public GameObject[] levels;
 
+    public GameObject[] doors;
+
     public EnemySpawner enemySpawner;
 
     public AudioSource audioSource;
@@ -44,6 +46,7 @@ public class LevelController : MonoBehaviour
 
     public void FinishedLevel()
     {
+        Destroy(doors[currentLevel]);
         currentLevel++;
         if (currentLevel == 1)
             currentClip = level2;
