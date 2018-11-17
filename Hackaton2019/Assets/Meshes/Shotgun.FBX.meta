@@ -1,16 +1,29 @@
 fileFormatVersion: 2
-guid: 2f8d3dc54d67e144380358b15b066970
-timeCreated: 1542442880
+guid: 40c1c17e9103f7a4792d4132d288b1b8
+timeCreated: 1542447186
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
-    100000: //RootNode
-    400000: //RootNode
-    2100000: No Name
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: Grip
+    100000: body
+    100002: Cartrage 1
+    100004: //RootNode
+    400000: body
+    400002: Cartrage 1
+    400004: //RootNode
+    2100000: Darker
+    2100002: 01 - Default
+    2100004: 08 - Default
+    2100006: 09 - Default
+    2100008: 03 - Default
+    2100010: 02 - Default
+    2300000: body
+    2300002: Cartrage 1
+    3300000: body
+    3300002: Cartrage 1
+    4300000: body
+    4300002: Cartrage 1
+    9500000: //RootNode
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -85,7 +98,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 0
+  animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
