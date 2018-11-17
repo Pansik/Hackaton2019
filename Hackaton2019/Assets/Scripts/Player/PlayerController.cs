@@ -3,17 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class PlayerController : MonoBehaviour {
-
-
+public class PlayerController : MonoBehaviour
+{
     public static PlayerController Instance;
-    [SerializeField]
-    private Slider hpBar;
-    [SerializeField]
-    private Slider secondaryHPBar;
-
+    public Image hpImage;
+    public LowHpAnimation lowHpEffectReference;
     private float maxHp = 100f;
-    private float hp = 100f;
+    private float currentHp = 100f;
 
     private void Awake()
     {
@@ -25,14 +21,22 @@ public class PlayerController : MonoBehaviour {
 
     private void Update()
     {
-
         Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * 10, Color.black);
+        hpImage.fillAmount = Mathf.Lerp(hpImage.fillAmount, currentHp / maxHp, 0.5f);
+        if (currentHp < maxHp * 0.5f)
+        {
+            lowHpEffectReference.enabled = true;
+        }
+        else
+        {
+            lowHpEffectReference.enabled = false;
+        }
     }
 
     public void GetHit(float damage)
     {
-        hp -= damage;
-        if (hp <= 0)
+        currentHp -= damage;
+        if (currentHp <= 0)
         {
             Death();
         }
@@ -42,8 +46,6 @@ public class PlayerController : MonoBehaviour {
         }
     }
 
-    
-
     private void Death()
     {
         Debug.Log("RIP");
@@ -52,7 +54,6 @@ public class PlayerController : MonoBehaviour {
     private void DamageTaken(float damage)
     {
         Debug.Log("ouch! took " + damage + " damage");
-        hpBar.value = hp;
     }
     
 }
