@@ -4,11 +4,25 @@ using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour {
 
+    public static EnemySpawner Instance;
+
+    private void Awake()
+    {
+        if(Instance == null)
+        {
+            Instance = this;
+        }
+    }
+
     public static int currentNumberOfEnemies;
     public int maxNumberOfEnemiesPerWave;
 
     [SerializeField]
-    private GameObject[] enemies;
+    private GameObject[] enemiesLevelOne;
+    [SerializeField]
+    private GameObject[] enemiesLevelTwo;
+    [SerializeField]
+    private GameObject[] enemiesLevelThree;
 
     private List<GameObject> listOfEnemies;
 
@@ -36,25 +50,42 @@ public class EnemySpawner : MonoBehaviour {
 
     private void SpawnEnemy()
     {
+        GameObject newEnemy = null;
         if(currentNumberOfEnemies >= maxNumberOfEnemiesPerWave)
         {
             EndWave();
             return;
         }
-        var newEnemy = Instantiate(enemies[Random.Range(0, enemies.Length)], transform);
+        switch (LevelController.Instance.currentLevel)
+        {
+            case 1:
+                newEnemy = Instantiate(enemiesLevelOne[Random.Range(0, enemiesLevelOne.Length)], transform);
+                currentNumberOfEnemies++;
+                break;
+            case 2:
+                newEnemy = Instantiate(enemiesLevelOne[Random.Range(0, enemiesLevelOne.Length)], transform);
+                currentNumberOfEnemies++;
+                break;
+            case 3:
+                newEnemy = Instantiate(enemiesLevelOne[Random.Range(0, enemiesLevelOne.Length)], transform);
+                currentNumberOfEnemies++;
+                break;
+            default:
+                newEnemy = Instantiate(enemiesLevelOne[Random.Range(0, enemiesLevelOne.Length)], transform);
+                currentNumberOfEnemies++;
+                break;
+        }
+        
         listOfEnemies.Add(newEnemy);
-        currentNumberOfEnemies++;
     }
 
     private void EndWave()
     {
         Debug.Log("End of wave!");
-        //Destroy(gameObject);
-        //listOfEnemies.Clear();
         if(listOfEnemies.Count == 0)
         {
             Debug.Log("all enemies are dead!");
-            Destroy(gameObject);
+            LevelController.Instance.FinishedLevel();
         }
 
     }

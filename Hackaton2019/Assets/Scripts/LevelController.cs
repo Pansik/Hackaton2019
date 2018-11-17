@@ -4,28 +4,47 @@ using UnityEngine;
 
 public class LevelController : MonoBehaviour {
 
+    public static LevelController Instance;
 
     public int currentLevel = 0;
+    [Tooltip("Attach map prefab to be loaded")]
     public GameObject[] levels;
 
     public EnemySpawner enemySpawner;
-	// Use this for initialization
-	void Start () {
+
+    private void Awake()
+    {
+        if(Instance == null)
+        {
+            Instance = this;
+        }
+    }
+    // Use this for initialization
+    void Start () {
 		
 	}
 	
 	// Update is called once per frame
-	void Update () {
-        if( Input.GetKeyDown(KeyCode.H)){
+	void Update ()
+    {
+        debug();
+    }
+
+    private void debug()
+    {
+        if (Input.GetKeyDown(KeyCode.H))
+        {
             enemySpawner.DeleteEnemies();
         }
-	}
+    }
 
-    private void FinishedLevel()
+    public void FinishedLevel()
     {
         currentLevel++;
-        if (currentLevel < levels.Length)
+        EnemySpawner.Instance.DeleteEnemies();
+        if (currentLevel < levels.Length && PlayerController.Instance.Died == false)
         {
+            Debug.LogWarning("gotta rework leveling");
             NextLevel();
         }
         else
@@ -36,6 +55,7 @@ public class LevelController : MonoBehaviour {
 
     private void NextLevel()
     {
-
+        Debug.LogError("load next level");
+        EnemySpawner.currentNumberOfEnemies = 0;
     }
 }

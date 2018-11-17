@@ -15,7 +15,7 @@ public class PlayerController : MonoBehaviour
     private Animator anim;
 
 
-    bool died = false;
+    public bool Died = false;
 
     private void Awake()
     {
@@ -54,11 +54,12 @@ public class PlayerController : MonoBehaviour
 
     private void Death()
     {
-        if (died)
+        if (Died)
             return;
+        EnemySpawner.Instance.DeleteEnemies();
         anim.SetTrigger("Died");
         Debug.Log("RIP");
-        died = true;
+        Died = true;
     }
 
     private void DamageTaken(float damage)
