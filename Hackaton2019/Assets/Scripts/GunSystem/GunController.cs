@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GunController : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class GunController : MonoBehaviour
     private float shootDelayTimer;
     private bool canShoot = false;
     private MovementController movementController;
+    public Image uiWeaponIcon;
 
     private void Start()
     {
@@ -41,6 +43,7 @@ public class GunController : MonoBehaviour
         currentWeapon = newWeapon;
         PlayerSoundManager.instance.PlayClip(pickupSound);
         SetupShootDelay();
+        uiWeaponIcon.sprite = newWeapon.icon;
     }
 
     private void SetupShootDelay()
