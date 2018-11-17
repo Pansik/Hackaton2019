@@ -8,12 +8,16 @@ public class PlayerController : MonoBehaviour
     public static PlayerController Instance;
     public Image hpImage;
     public LowHpAnimation lowHpEffectReference;
+
+    public Transform parentForAnimHP;
+    public GameObject addHpAnim;
+
     private float maxHp = 100f;
     private float currentHp = 100f;
 
     [SerializeField]
     private Animator anim;
-
+    public AudioClip collectBarSound;
 
     bool died = false;
 
@@ -65,5 +69,27 @@ public class PlayerController : MonoBehaviour
     {
         Debug.Log("ouch! took " + damage + " damage");
     }
-    
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Bar"))
+        {
+            float bonusHp = Random.Range(20, 60);
+            currentHp += bonusHp;
+            PlayerSoundManager.instance.PlayClip(collectBarSound);
+            Destroy(collision.gameObject);
+            int bonusHpConverted = (int)bonusHp;
+            addHpAnim.GetComponent<Text>().text = "+" + bonusHpConverted.ToString() + " HP";
+            addHpAnim.transform.position = parentForAnimHP.position;
+            addHpAnim.SetActive(true);
+            StartCoroutine(DeactivateHpAnim());
+        }
+    }
+
+    private IEnumerator DeactivateHpAnim()
+    {
+        yield return new WaitForSeconds(1);
+        addHpAnim.SetActive(false);
+    }
+
 }
