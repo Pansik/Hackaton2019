@@ -63,11 +63,11 @@ public class EnemySpawner : MonoBehaviour {
                 currentNumberOfEnemies++;
                 break;
             case 2:
-                newEnemy = Instantiate(enemiesLevelOne[Random.Range(0, enemiesLevelOne.Length)], transform);
+                newEnemy = Instantiate(enemiesLevelTwo[Random.Range(0, enemiesLevelTwo.Length)], transform);
                 currentNumberOfEnemies++;
                 break;
             case 3:
-                newEnemy = Instantiate(enemiesLevelOne[Random.Range(0, enemiesLevelOne.Length)], transform);
+                newEnemy = Instantiate(enemiesLevelThree[Random.Range(0, enemiesLevelThree.Length)], transform);
                 currentNumberOfEnemies++;
                 break;
             default:
