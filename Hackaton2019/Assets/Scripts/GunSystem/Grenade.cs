@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Grenade : MonoBehaviour
 {
+    private const int GRENADE_DAMAGE = 3;
+    private const int PLAYER_GRANADE_DAMAGE = 15;
     public GameObject explosionEffect;
     public float explosionForce = 700f;
     public float timeToDetonate = 3;
@@ -27,6 +29,17 @@ public class Grenade : MonoBehaviour
         foreach(Collider nearbyObject in colliders)
         {
             Rigidbody rb = nearbyObject.GetComponent<Rigidbody>();
+            EnemyController enemyController = nearbyObject.GetComponent<EnemyController>();
+            if(enemyController != null)
+            {
+                enemyController.TakeDamage(GRENADE_DAMAGE);
+            }
+            else
+            {
+                PlayerController playerController = nearbyObject.GetComponent<PlayerController>();
+                if(playerController != null)
+                    playerController.GetHit(PLAYER_GRANADE_DAMAGE);
+            }
             if(rb != null)
             {
                 rb.AddExplosionForce(explosionForce, transform.position, radius);

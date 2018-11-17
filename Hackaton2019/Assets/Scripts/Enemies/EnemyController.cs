@@ -43,9 +43,14 @@ public class EnemyController : MonoBehaviour {
 
         if (collision.gameObject.CompareTag("Bullet"))
         {
-            hp--;
-            if(hp == 0)
-                Destroy(gameObject);
+            TakeDamage(1);
         }
+    }
+
+    public void TakeDamage(float value)
+    {
+        hp -= value;
+        if (hp <= 0)
+            Destroy(gameObject);
     }
 }
