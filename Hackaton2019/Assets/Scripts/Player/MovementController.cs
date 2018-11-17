@@ -21,18 +21,25 @@ public class MovementController : MonoBehaviour {
 
     Vector3 oldTransform;
 
+    [SerializeField]
+    private Camera mainCamera;
+    private Vector3 forward, right;
 
     public float moveSpeed = 5;
 
     private void Start()
     {
         myRigidbody = GetComponent<Rigidbody>();
+        forward = mainCamera.transform.forward;
+        forward.y = 0f;
+        forward = Vector3.Normalize(forward);
+        right = Quaternion.Euler(new Vector3(0, 90, 0) )* forward;
     }
 
-    public void Move(Vector3 _velocity)
-    {
-        velocity = _velocity;
-    }
+    //public void Move(Vector3 _velocity)
+    //{
+    //    velocity = _velocity;
+    //}
 
     public void LookAt(Vector3 lookPoint)
     {
@@ -40,27 +47,29 @@ public class MovementController : MonoBehaviour {
         transform.LookAt(heightCorrectedPoint);
     }
 
-    public void FixedUpdate()
-    {
-        myRigidbody.MovePosition(myRigidbody.position + velocity * Time.fixedDeltaTime);
+    //public void FixedUpdate()
+    //{
+    //    myRigidbody.MovePosition(myRigidbody.position + velocity * Time.fixedDeltaTime);
 
-    }
+    //}
 
     void Update()
     {
-        //var x = Input.GetAxis("Horizontal") * Time.deltaTime * 3.0f;
-        //var z = Input.GetAxis("Vertical") * Time.deltaTime * 3.0f;
-
-        //Vector3 moveInput = new Vector3(x, 0, z);
+        //Vector3 moveInput = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
         //Vector3 moveVelocity = moveInput.normalized * moveSpeed;
-        //if (Input.GetKey(KeyCode.LeftArrow) == false && Input.GetKey(KeyCode.RightArrow) == false)
-        //    moveVelocity = Vector3.zero;
-        //Debug.Log(x + "     horizontal    " + z);
-        //Move(moveVelocity);
-        //transform.Translate(x, 0, z);
 
-        Vector3 moveInput = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
-        Vector3 moveVelocity = moveInput.normalized * moveSpeed;
+        Vector3 direction = new Vector3(Input.GetAxisRaw("HorizontalKey"), 0, Input.GetAxisRaw("VerticalKey"));
+        Vector3 rightMovement = right * moveSpeed * Time.deltaTime * Input.GetAxis("HorizontalKey");
+        Vector3 upMovement = forward * moveSpeed * Time.deltaTime * Input.GetAxis("VerticalKey");
+        
+        Vector3 heading = Vector3.Normalize(rightMovement + upMovement);
+        transform.forward = heading;
+        transform.position += rightMovement;
+        transform.position += upMovement;
+
+
+        var temp = heading + upMovement;
+
 
         var tempVector = oldTransform - transform.position;
 
@@ -92,17 +101,14 @@ public class MovementController : MonoBehaviour {
 //        {
 //            anim.SetBool("Walk", false);
 //        }
-        Move(moveVelocity);
+        //Move(moveVelocity);
         Ray ray = viewCamera.ScreenPointToRay(Input.mousePosition);
         Plane groundPlane = new Plane(Vector3.up, Vector3.zero);
         float rayDistance;
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            Debug.Log("space");
-            //myRigidbody.velocity = velocity * dashSpeed;
-            //myRigidbody.MovePosition(myRigidbody.position + velocity * Time.fixedDeltaTime * 10);
-            StartCoroutine(Dash(velocity));
+            StartCoroutine(Dash(temp));
         }
 
         if (groundPlane.Raycast(ray, out rayDistance))
@@ -110,7 +116,6 @@ public class MovementController : MonoBehaviour {
             Vector3 point = ray.GetPoint(rayDistance);
             Debug.DrawLine(ray.origin, point, Color.red);
             crosshair.transform.position = new Vector3(point.x, point.y+0.1f, point.z);
-            //Debug.DrawRay(ray.origin,ray.direction * 100,Color.red);
             LookAt(point);
         }
 
@@ -120,12 +125,6 @@ public class MovementController : MonoBehaviour {
     private IEnumerator Dash(Vector3 velocity)
     {
         myRigidbody.velocity = velocity * dashSpeed;
-        //for (float i = 0f; i < 0.3f; i += Time.deltaTime)
-        //{
-
-        //    myRigidbody.MovePosition(myRigidbody.position + velocity * Time.fixedDeltaTime * 2.2f);
-        //    yield return null;
-        //}
         yield return new WaitForSeconds(dashTime);
         myRigidbody.velocity = Vector3.zero;
     }

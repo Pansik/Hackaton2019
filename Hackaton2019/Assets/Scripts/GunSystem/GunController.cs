@@ -37,6 +37,7 @@ public class GunController : MonoBehaviour
 
     private void OnWeaponPickup(Weapon newWeapon)
     {
+        Destroy(currentWeapon.gameObject);
         newWeapon.gameObject.transform.position = gunTransform.position;
         newWeapon.gameObject.transform.parent = gunTransform.parent;
         newWeapon.gameObject.transform.rotation = gunTransform.rotation;

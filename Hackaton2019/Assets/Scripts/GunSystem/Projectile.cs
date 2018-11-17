@@ -6,11 +6,13 @@ public class Projectile : MonoBehaviour
 {
     public float projectileSpeed;
     private Rigidbody rb;
+    private GunController gunController;
 
     private void Awake()
     {
+        gunController = FindObjectOfType<GunController>();
         rb = GetComponent<Rigidbody>();
-        rb.velocity = transform.forward * projectileSpeed;
+        rb.velocity = gunController.gunTransform.forward * projectileSpeed;
     }
 
     private void OnCollisionEnter(Collision collision)

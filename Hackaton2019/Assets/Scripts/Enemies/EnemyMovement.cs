@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-[RequireComponent(typeof(NavMeshAgent))]
+//[RequireComponent(typeof(NavMeshAgent))]
 public class EnemyMovement : MonoBehaviour {
 
 
@@ -72,7 +72,7 @@ public class EnemyMovement : MonoBehaviour {
 
     private void FixedUpdate()
     {
-        rb.rotation = Quaternion.LookRotation(direction, Vector3.up);
+        //rb.rotation = Quaternion.LookRotation(direction, Vector3.up);
         rb.angularDrag = rotationDrag;
 
         //If the player is in range move towards
@@ -132,14 +132,14 @@ public class EnemyMovement : MonoBehaviour {
     {
         isShooting = false;
         rb.drag = (brakeForce);
-        pathFinder.isStopped = true;
+        //pathFinder.isStopped = true;
     }
 
     private void EnemyMovesToPlayer()
     {
-        pathFinder.isStopped = false;
-        isShooting = false;
-        pathFinder.SetDestination(target.position);
+        //pathFinder.isStopped = false;
+        //isShooting = false;
+        //pathFinder.SetDestination(target.position);
     }
 
 
