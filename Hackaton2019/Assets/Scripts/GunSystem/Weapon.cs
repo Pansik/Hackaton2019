@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Weapon : MonoBehaviour
 {
-    public static event System.Action<Weapon> EventOnShoot;
     public GameObject projectilePrefab;
     public GameObject husk;
     public List<Transform> projectileStartTransforms;
@@ -26,11 +25,7 @@ public class Weapon : MonoBehaviour
             PlayShootSound();
             DropHusk(shootPosition.position);
         }
-
-        if(EventOnShoot != null)
-        {
-            EventOnShoot(this);
-        }
+        CameraShake.instance.StartShake(0.1f, cameraShakeStrength);
     }
 
     private void DropHusk(Vector3 dropPosition)

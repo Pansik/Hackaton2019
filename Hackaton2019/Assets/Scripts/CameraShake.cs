@@ -4,14 +4,16 @@ using UnityEngine;
 
 public class CameraShake : MonoBehaviour
 {
-    private void Start()
-    {
-        Weapon.EventOnShoot += StartShake;
-    }
+    public static CameraShake instance = null;
 
-    private void StartShake(Weapon weapon)
+    private void Awake()
     {
-        StartCoroutine(Shake(0.1f, weapon.cameraShakeStrength));
+        if (instance == null)
+            instance = this;
+    }
+    public void StartShake(float duration, float magnitude)
+    {
+        StartCoroutine(Shake(duration, magnitude));
     }
 
     private IEnumerator Shake(float duration, float magnitude)
