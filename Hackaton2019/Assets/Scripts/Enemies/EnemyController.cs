@@ -8,6 +8,8 @@ public class EnemyController : MonoBehaviour {
     private float attackDamage = 5f;
     private EnemySpawner spawner;
 
+    private float hp = 5;
+
     // Use this for initialization
     void Start () {
         spawner = transform.parent.GetComponent<EnemySpawner>();
@@ -37,6 +39,13 @@ public class EnemyController : MonoBehaviour {
             PlayerController.Instance.GetHit(attackDamage * 2);
             spawner.DeleteEnemyFromList(gameObject);
             Destroy(gameObject);
+        }
+
+        if (collision.gameObject.CompareTag("Bullet"))
+        {
+            hp--;
+            if(hp == 0)
+                Destroy(gameObject);
         }
     }
 }

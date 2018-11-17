@@ -9,6 +9,8 @@ public class PlayerController : MonoBehaviour {
     public static PlayerController Instance;
     [SerializeField]
     private Slider hpBar;
+    [SerializeField]
+    private Slider secondaryHPBar;
 
     private float maxHp = 100f;
     private float hp = 100f;

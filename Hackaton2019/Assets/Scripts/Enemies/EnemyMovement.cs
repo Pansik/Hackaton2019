@@ -61,7 +61,6 @@ public class EnemyMovement : MonoBehaviour {
 
     void Update()
     {
-        Debug.Log(pathFinder.speed);
         timeSinceLastHit += Time.deltaTime;
         //Find the distance to the player
         distance = Vector3.Distance(player.transform.position, this.transform.position);
@@ -96,7 +95,6 @@ public class EnemyMovement : MonoBehaviour {
             RaycastHit hit;
             if(Physics.Linecast(transform.position, target.transform.position, out hit) == true)
             {
-                Debug.Log(hit.transform.tag);
                 if (!hit.transform.CompareTag("Player"))
                 {
                     EnemyMovesToPlayer();

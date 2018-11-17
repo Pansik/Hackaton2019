@@ -14,6 +14,8 @@ public class MovementController : MonoBehaviour {
     private Rigidbody myRigidbody;
 
     [SerializeField]
+    private Animator anim;
+    [SerializeField]
     private Camera viewCamera;
 
 
@@ -56,6 +58,14 @@ public class MovementController : MonoBehaviour {
 
         Vector3 moveInput = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
         Vector3 moveVelocity = moveInput.normalized * moveSpeed;
+;       if(moveVelocity != Vector3.zero)
+        {
+            anim.SetBool("Walk", true);
+        }
+        else
+        {
+            anim.SetBool("Walk", false);
+        }
         Move(moveVelocity);
         Ray ray = viewCamera.ScreenPointToRay(Input.mousePosition);
         Plane groundPlane = new Plane(Vector3.up, Vector3.zero);
