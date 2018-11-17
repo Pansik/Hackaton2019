@@ -5746,7 +5746,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxNumberOfEnemiesPerWave: 5
-  enemiesLevelOne: []
+  enemiesLevelOne:
+  - {fileID: 1007697404354428, guid: 239c01f94ed28424fba99e0666de8bf6, type: 2}
+  - {fileID: 1366253949056210, guid: 27396a802d5a7e8489717bcdd4072615, type: 2}
+  - {fileID: 1485455081163062, guid: fdd5477d62ed32c49b3a57f635d197b2, type: 2}
+  - {fileID: 1579378567273270, guid: 5cf9a509ec61dad44afca0e54d9d114f, type: 2}
   enemiesLevelTwo: []
   enemiesLevelThree: []
   timeBetweenSpawns: 1
@@ -11517,6 +11521,53 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 801684252}
   m_Mesh: {fileID: 4300022, guid: f799d38051afb8943bb50829ae9458b6, type: 3}
+--- !u!1 &810787908
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 810787910}
+  - component: {fileID: 810787909}
+  m_Layer: 0
+  m_Name: LevelController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &810787909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 810787908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c34e57c4672e2e7429562e005a3e380e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentLevel: 0
+  levels:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  enemySpawner: {fileID: 383944865}
+--- !u!4 &810787910
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 810787908}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -25.369192, y: 16.929121, z: 47.11266}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 23
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &817224713
 GameObject:
   m_ObjectHideFlags: 0
@@ -13924,6 +13975,11 @@ Prefab:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 114703840495550858, guid: 0e74cf81e6fd82546b4797f71ceffb81,
+        type: 2}
+      propertyPath: mainCamera
+      value: 
+      objectReference: {fileID: 758460659}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0e74cf81e6fd82546b4797f71ceffb81, type: 2}
   m_IsPrefabParent: 0
