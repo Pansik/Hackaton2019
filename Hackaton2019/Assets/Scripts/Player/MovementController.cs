@@ -70,6 +70,9 @@ public class MovementController : MonoBehaviour {
         transform.position += upMovement;
 
 
+        var temp = heading + upMovement;
+
+
         var tempVector = oldTransform - transform.position;
 
         anim.SetBool("Walk", false);
@@ -107,7 +110,7 @@ public class MovementController : MonoBehaviour {
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            StartCoroutine(Dash(velocity));
+            StartCoroutine(Dash(temp));
         }
 
         if (groundPlane.Raycast(ray, out rayDistance))
