@@ -19,6 +19,9 @@ public class MovementController : MonoBehaviour {
     private Camera viewCamera;
 
 
+    Vector3 oldTransform;
+
+
     public float moveSpeed = 5;
 
     private void Start()
@@ -58,14 +61,38 @@ public class MovementController : MonoBehaviour {
 
         Vector3 moveInput = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
         Vector3 moveVelocity = moveInput.normalized * moveSpeed;
-;       if(moveVelocity != Vector3.zero)
+
+        var tempVector = oldTransform - transform.position;
+
+        anim.SetBool("Walk", false);
+        anim.SetBool("WalkLeft", false);
+        anim.SetBool("WalkRight", false);
+        anim.SetBool("WalkBackwards", false);
+
+        Debug.Log(tempVector);
+        if (tempVector.z >= 0.1)
+        {
+            anim.SetBool("WalkBackwards", true);
+        }else if(tempVector.z <= -0.1)
         {
             anim.SetBool("Walk", true);
-        }
-        else
+        }else if(tempVector.x >= 0.1)
         {
-            anim.SetBool("Walk", false);
+            anim.SetBool("WalkLeft", true);
+        }else if(tempVector.x <= -0.1)
+        {
+            anim.SetBool("WalkRight", true);
         }
+
+
+//;       if(moveVelocity != Vector3.zero)
+//        {
+//            anim.SetBool("Walk", true);
+//        }
+//        else
+//        {
+//            anim.SetBool("Walk", false);
+//        }
         Move(moveVelocity);
         Ray ray = viewCamera.ScreenPointToRay(Input.mousePosition);
         Plane groundPlane = new Plane(Vector3.up, Vector3.zero);
@@ -87,6 +114,7 @@ public class MovementController : MonoBehaviour {
             LookAt(point);
         }
 
+        oldTransform = transform.position;
     }
 
     private IEnumerator Dash(Vector3 velocity)
