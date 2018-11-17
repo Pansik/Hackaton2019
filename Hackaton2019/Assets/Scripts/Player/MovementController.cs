@@ -14,7 +14,7 @@ public class MovementController : MonoBehaviour {
     private Rigidbody myRigidbody;
 
     [SerializeField]
-    private Animator anim;
+    public Animator anim;
     [SerializeField]
     private Camera viewCamera;
 
@@ -68,8 +68,7 @@ public class MovementController : MonoBehaviour {
         anim.SetBool("WalkLeft", false);
         anim.SetBool("WalkRight", false);
         anim.SetBool("WalkBackwards", false);
-
-        Debug.Log(tempVector);
+        
         if (tempVector.z >= 0.1)
         {
             anim.SetBool("WalkBackwards", true);
