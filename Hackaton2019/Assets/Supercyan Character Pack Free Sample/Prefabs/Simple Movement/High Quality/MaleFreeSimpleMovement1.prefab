@@ -390,6 +390,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1530403434199314
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4466970372571840}
+  m_Layer: 0
+  m_Name: StartProjectileTransform
+  m_TagString: Untagged
+  m_Icon: {fileID: 7707008975528953803, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1534167706798416
 GameObject:
   m_ObjectHideFlags: 1
@@ -519,7 +534,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4814663892320178}
   m_Layer: 0
-  m_Name: StartProjectileTransform
+  m_Name: huskPosition
   m_TagString: Untagged
   m_Icon: {fileID: 7707008975528953803, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -968,6 +983,19 @@ Transform:
   m_Father: {fileID: 4492185259830228}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4466970372571840
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1530403434199314}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.08, y: 1.32, z: 0.43}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4553086962501492}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4476206904280286
 Transform:
   m_ObjectHideFlags: 1
@@ -1081,6 +1109,7 @@ Transform:
   m_LocalScale: {x: 0.023284193, y: 0.026080756, z: 0.14542626}
   m_Children:
   - {fileID: 4554163799281226}
+  - {fileID: 4466970372571840}
   - {fileID: 4814663892320178}
   m_Father: {fileID: 4549428611729446}
   m_RootOrder: 4
@@ -1231,12 +1260,12 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1655366753612632}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.08, y: 1.32, z: 0.43}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: 1.7763543e-15, w: 1}
+  m_LocalPosition: {x: -1.97, y: 1.76, z: -0.175}
+  m_LocalScale: {x: 0.99995667, y: 0.99995744, z: 0.99998987}
   m_Children: []
   m_Father: {fileID: 4553086962501492}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4847653254301724
 Transform:
@@ -1660,10 +1689,11 @@ MonoBehaviour:
     type: 2}
   husk: {fileID: 1123161558413908, guid: c37b1cb54a9a6f848b9ae4d17cc51d09, type: 2}
   projectileStartTransforms:
-  - {fileID: 4814663892320178}
+  - {fileID: 4466970372571840}
   shootDelay: 0.15
   cameraShakeStrength: 0.1
   icon: {fileID: 21300000, guid: 334f3b251f7e96e45b151fb8e8cc8cbe, type: 3}
+  huskPosition: {fileID: 4814663892320178}
 --- !u!114 &114566368355496248
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1704,6 +1734,7 @@ MonoBehaviour:
   dashSpeed: 0.25
   anim: {fileID: 95665039525092722}
   viewCamera: {fileID: 0}
+  mainCamera: {fileID: 0}
   moveSpeed: 5
 --- !u!114 &114831119549781858
 MonoBehaviour:

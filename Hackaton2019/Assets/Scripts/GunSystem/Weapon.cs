@@ -11,6 +11,7 @@ public class Weapon : MonoBehaviour
     public float cameraShakeStrength;
     public Sprite icon;
     private AudioSource audioSource;
+    public Transform huskPosition;
 
     private void Awake()
     {
@@ -23,7 +24,7 @@ public class Weapon : MonoBehaviour
         {
             GameObject newProjectile = Instantiate(projectilePrefab, shootPosition.position, shootPosition.rotation);
             PlayShootSound();
-            DropHusk(shootPosition.position);
+            DropHusk(huskPosition.position);
         }
         CameraShake.instance.StartShake(0.1f, cameraShakeStrength);
     }

@@ -14,7 +14,7 @@ public class Husk : MonoBehaviour
     {
         audioSource = GetComponent<AudioSource>();
         rb = GetComponent<Rigidbody>();
-        //rb.AddForce(transform.up * Random.Range(minImpulseForce/100 ,maxImpulseForce/100), ForceMode.Impulse);
+        rb.AddForce(transform.up * Random.Range(minImpulseForce ,maxImpulseForce), ForceMode.Impulse);
     }
 
     private void OnCollisionEnter(Collision collision)
