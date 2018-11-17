@@ -30,6 +30,7 @@ public class Grenade : MonoBehaviour
                 rb.AddExplosionForce(explosionForce, transform.position, radius);
             }
         }
+        CameraShake.instance.StartShake(0.2f, 0.3f);
         Destroy(gameObject);
     }
 

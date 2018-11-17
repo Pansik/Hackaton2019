@@ -5,24 +5,27 @@ using UnityEngine;
 public class Projectile : MonoBehaviour
 {
     public float projectileSpeed;
+    private Rigidbody rb;
 
-    private void Update()
+    private void Awake()
     {
-        transform.position += transform.forward * projectileSpeed * Time.deltaTime;
+        rb = GetComponent<Rigidbody>();
+        rb.velocity = transform.forward * projectileSpeed;
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnCollisionEnter(Collision collision)
     {
-        if(other.CompareTag("Enemy"))
+        if (collision.gameObject.CompareTag("Enemy"))
         {
             //hurt that motherfucker
             Destroy(gameObject);
         }
 
-        if(other.CompareTag("Untagged"))
+        if (collision.gameObject.CompareTag("Untagged"))
         {
             Destroy(gameObject);
         }
+
     }
 
 }
