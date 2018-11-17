@@ -10,6 +10,7 @@ public class Grenade : MonoBehaviour
     public float explosionForce = 700f;
     public float timeToDetonate = 3;
     public float radius;
+    public AudioClip explosionSound;
 
     private void Update()
     {
@@ -23,6 +24,7 @@ public class Grenade : MonoBehaviour
     private void Explode()
     {
         Instantiate(explosionEffect, transform.position, transform.rotation);
+        PlayerSoundManager.instance.PlayClip(explosionSound);
         Collider[] colliders = Physics.OverlapSphere(transform.position, radius);
         foreach(Collider nearbyObject in colliders)
         {

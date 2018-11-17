@@ -1,15 +1,18 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GunController : MonoBehaviour
 {
     public Weapon currentWeapon;
     public Transform gunTransform;
+    public AudioClip pickupSound;
     private float shootDelay;
     private float shootDelayTimer;
     private bool canShoot = false;
     private MovementController movementController;
+    public Image uiWeaponIcon;
 
     private void Start()
     {
@@ -38,7 +41,9 @@ public class GunController : MonoBehaviour
         newWeapon.gameObject.transform.parent = gunTransform.parent;
         newWeapon.gameObject.transform.rotation = gunTransform.rotation;
         currentWeapon = newWeapon;
+        PlayerSoundManager.instance.PlayClip(pickupSound);
         SetupShootDelay();
+        uiWeaponIcon.sprite = newWeapon.icon;
     }
 
     private void SetupShootDelay()

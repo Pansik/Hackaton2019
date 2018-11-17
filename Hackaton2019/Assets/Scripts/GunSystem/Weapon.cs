@@ -9,7 +9,7 @@ public class Weapon : MonoBehaviour
     public List<Transform> projectileStartTransforms;
     public float shootDelay;
     public float cameraShakeStrength;
-
+    public Sprite icon;
     private AudioSource audioSource;
 
     private void Awake()
