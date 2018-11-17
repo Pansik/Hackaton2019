@@ -51,6 +51,10 @@ public class EnemyController : MonoBehaviour {
     {
         hp -= value;
         if (hp <= 0)
+        {
+            spawner.DeleteEnemyFromList(gameObject);
             Destroy(gameObject);
+        }
+
     }
 }
