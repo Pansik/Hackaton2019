@@ -10,6 +10,8 @@ public class LevelController : MonoBehaviour {
     [Tooltip("Attach map prefab to be loaded")]
     public GameObject[] levels;
 
+    public GameObject[] doors;
+
     public EnemySpawner enemySpawner;
 
     private void Awake()
@@ -40,6 +42,7 @@ public class LevelController : MonoBehaviour {
 
     public void FinishedLevel()
     {
+        Destroy(doors[currentLevel]);
         currentLevel++;
         EnemySpawner.Instance.DeleteEnemies();
         if (currentLevel < levels.Length && PlayerController.Instance.Died == false)
