@@ -5,7 +5,7 @@ using UnityEngine;
 public class MovementController : MonoBehaviour {
 
     public event System.Action<Weapon> EventOnPickupWeapon;
-
+    public GameObject crosshair;
     [SerializeField]
     private float dashTime = 0.3f;
     [SerializeField]
@@ -110,6 +110,7 @@ public class MovementController : MonoBehaviour {
         {
             Vector3 point = ray.GetPoint(rayDistance);
             Debug.DrawLine(ray.origin, point, Color.red);
+            crosshair.transform.position = new Vector3(point.x, point.y+0.1f, point.z);
             //Debug.DrawRay(ray.origin,ray.direction * 100,Color.red);
             LookAt(point);
         }

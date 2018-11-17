@@ -503,7 +503,7 @@ MonoBehaviour:
   explosionEffect: {fileID: 1000011797152326, guid: acf39d9f4addf294d93fa56fa373961b,
     type: 2}
   explosionForce: 1000
-  timeToDetonate: 3
+  timeToDetonate: 1
   radius: 10
 --- !u!135 &135412879312698960
 SphereCollider:
