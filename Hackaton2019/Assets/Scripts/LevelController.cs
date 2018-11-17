@@ -46,7 +46,7 @@ public class LevelController : MonoBehaviour
 
     public void FinishedLevel()
     {
-        Destroy(doors[currentLevel]);
+        //Destroy(doors[currentLevel]);
         currentLevel++;
         if (currentLevel == 1)
             currentClip = level2;

@@ -52,13 +52,12 @@ public class EnemyMovement : MonoBehaviour {
         currentState = CurrentState.Idle;
         isShooting = false;
         rb = GetComponent<Rigidbody>();
-        pathFinder = GetComponent<NavMeshAgent>();
-        pathFinder.speed = moveSpeed;
+        //pathFinder = GetComponent<NavMeshAgent>();
+        //pathFinder.speed = moveSpeed;
         enemyController = GetComponent<EnemyController>();
         target = FindObjectOfType<PlayerController>().gameObject.transform;
         player = target.gameObject;
     }
-
     void Update()
     {
         timeSinceLastHit += Time.deltaTime;
@@ -72,7 +71,7 @@ public class EnemyMovement : MonoBehaviour {
 
     private void FixedUpdate()
     {
-        //rb.rotation = Quaternion.LookRotation(direction, Vector3.up);
+        rb.rotation = Quaternion.LookRotation(direction, Vector3.up);
         rb.angularDrag = rotationDrag;
 
         //If the player is in range move towards
@@ -86,7 +85,7 @@ public class EnemyMovement : MonoBehaviour {
         else if (distance < minDistance)
         {
 
-            EnemyStopsMoving();
+            //EnemyStopsMoving();
 
             currentState = CurrentState.Attacking;
 
@@ -124,7 +123,7 @@ public class EnemyMovement : MonoBehaviour {
         else
         {
             currentState = CurrentState.Idle;
-            EnemyStopsMoving();
+            //EnemyStopsMoving();
         }
     }
 
@@ -132,14 +131,15 @@ public class EnemyMovement : MonoBehaviour {
     {
         isShooting = false;
         rb.drag = (brakeForce);
-        //pathFinder.isStopped = true;
+        pathFinder.isStopped = true;
     }
 
     private void EnemyMovesToPlayer()
     {
+        transform.position = Vector3.MoveTowards(transform.position, target.transform.position, moveSpeed * Time.deltaTime);
+        //pathFinder.SetDestination(target.position);
         //pathFinder.isStopped = false;
         //isShooting = false;
-        //pathFinder.SetDestination(target.position);
     }
 
 
