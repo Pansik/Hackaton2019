@@ -64,4 +64,13 @@ public class EnemySpawner : MonoBehaviour {
         if (listOfEnemies.Contains(targetEnemy))
             listOfEnemies.Remove(listOfEnemies.Find(x => x.gameObject == targetEnemy));
     }
+
+    public void DeleteEnemies()
+    {
+        for (int i = listOfEnemies.Count -1; i >= 0; i--)
+        {
+            Destroy(listOfEnemies[i]);
+        }
+        listOfEnemies.Clear();
+    }
 }
